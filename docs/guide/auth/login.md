@@ -29,8 +29,8 @@ Les diiferents parametres liées à cette ressource sont les suivants:
 
 | paramettre |     Type     | regle de validation |                                          Description |
 | ---------- | :----------: | ------------------- | ---------------------------------------------------: |
-| username   | alphanumeric | unique              | C'est le nom qui sera utilisé dans l'authetification |
-| password   | alphanumeric | Min: 6 characters   |                                      le mot de passe |
+| username   | alphanumeric | ???                 | C'est le nom qui sera utilisé dans l'authetification |
+| password   | alphanumeric | ???                 |                                      le mot de passe |
 
 <br />
 
