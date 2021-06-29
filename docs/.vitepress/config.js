@@ -9,7 +9,7 @@ module.exports = {
 
     editLinks: true,
     editLinkText: 'Modifier cette page sur GitHub',
-    lastUpdated: 'Last Updated',
+    lastUpdated: 'Dernière mise à jour:',
 
     algolia: {
       apiKey: 'c57105e511faa5558547599f120ceeba',
@@ -55,8 +55,35 @@ function getGuideSidebar() {
     {
       text: 'Pages des Services',
       children: [
-        { text: 'Ma gestion', link: '/guide/magestion' },
-        { text: 'Mes Encours', link: '/guide/mesencours' },
+        { text: 'Welcome', link: '/guide/services/welcome' },
+        {
+          text: 'Ma gestion',
+          link: '/guide/services/magestion/magestion',
+
+          children: [
+            {
+              text: 'Index',
+              link: '/guide/services/magestion/index',
+            },
+            {
+              text: 'Affectation',
+              link: '/guide/services/magestion/affectation',
+            },
+            {
+              text: 'Invoice',
+              link: '/guide/services/magestion/invoice',
+            },
+            {
+              text: 'Category',
+              link: '/guide/services/magestion/category',
+            },
+            {
+              text: 'BankAcount',
+              link: '/guide/services/magestion/bankacount',
+            },
+          ],
+        },
+        { text: 'Mes Encours', link: '/guide/services/mesencours/index' },
       ],
     },
   ];

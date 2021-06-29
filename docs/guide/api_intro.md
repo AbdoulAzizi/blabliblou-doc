@@ -31,7 +31,7 @@ Exemple de Token invalide:
 ```json
 {
   "code": 401,
-  "message": "Invalid JWT Token"
+  "message": "Expired JWT Token"
 }
 ```
 

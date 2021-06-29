@@ -36,7 +36,7 @@ Les diiferents parametres liées à cette ressource sont les suivants:
 
 #### 4. Requête réussie
 
-Exemple re reponse
+Ci-dessous un exemple de rêquete passée avec succès :
 
 ```json
 {
@@ -44,14 +44,13 @@ Exemple re reponse
 }
 ```
 
-Ci-dessous un exemple de rêquete passer avec succès en renseignant les champs nécessaires (Obligatoires):
+#### 5. Cas d'échec d'une requête
 
-```
+Lorsque le nom d'utilisateur ou le mot de passe est incorrect, il s'affiche le message suivant:
 
-```
-
-#### 4. Requête echouée
-
-```
-
+```json
+{
+  "code": 401,
+  "message": "Invalid credentials."
+}
 ```
