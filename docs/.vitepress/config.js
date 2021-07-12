@@ -69,17 +69,61 @@ function getGuideSidebar() {
               text: 'Affectation',
               link: '/guide/services/magestion/affectation',
             },
-            {
-              text: 'Invoice',
-              link: '/guide/services/magestion/invoice',
-            },
+          ],
+        },
+        {
+          text: 'Transactions',
+          children: [
             {
               text: 'Category',
               link: '/guide/services/magestion/category',
             },
             {
-              text: 'BankAcount',
-              link: '/guide/services/magestion/bankacount',
+              text: 'Transaction',
+              link: '/guide/services/magestion/transaction',
+            },
+          ],
+        },
+        {
+          text: 'Invoice',
+          children: [
+            {
+              text: 'RECUPERER',
+              link: '/guide/services/invoice/index',
+            },
+            {
+              text: 'AJOUTER',
+              link: '/guide/services/invoice/store',
+            },
+            {
+              text: 'METTRE À JOUR',
+              link: '/guide/services/invoice/update',
+            },
+            {
+              text: 'SUPPRIMER',
+              link: '/guide/services/invoice/delete',
+            },
+          ],
+        },
+        {
+          text: 'Bank Acount',
+
+          children: [
+            {
+              text: 'RECUPERER',
+              link: '/guide/services/bankaccount/retrieve',
+            },
+            {
+              text: 'AJOUTER',
+              link: '/guide/services/bankaccount/store',
+            },
+            {
+              text: 'METTRE À JOUR',
+              link: '/guide/services/bankaccount/update',
+            },
+            {
+              text: 'SUPPRIMER',
+              link: '/guide/services/bankaccount/delete',
             },
           ],
         },
