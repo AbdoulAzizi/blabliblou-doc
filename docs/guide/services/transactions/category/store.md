@@ -1,10 +1,10 @@
-# Ressource Category
+# Ressource : Ajout d'une catégorie
 
 ---
 
 ## 1. Description de la Resource
 
-La ressource **Category** est l'URL ...
+Cette ressource permet d'enregistrer une catégorie.
 
 ## 2. URL et Méthode d'accès
 
@@ -24,9 +24,8 @@ Ci-dessous le tableau descriptif des paramètres de cette ressource :
 
 | paramètre   |   Type   | Règle de validation                                         |                     Description                      |
 | ----------- | :------: | ----------------------------------------------------------- | :--------------------------------------------------: |
-| id          | integer  | Génération automatique                                      |                    L'identifiant                     |
 | createdAt   | datetime | Obligatoire                                                 |                   Date de création                   |
-| slug        |  string  | ???                                                         | créé/généré à partir du nom à afficher (displayname) |
+| slug        |  string  | Optionnel                                                   | créé/généré à partir du nom à afficher (displayname) |
 | displayName |  string  | Obligatoire, min=3, max=200                                 |                    Nom à afficher                    |
 | status      |  string  | Obligatoire, <br> Valeurs à choisir : **enabled, disabled** |                      le status                       |
 

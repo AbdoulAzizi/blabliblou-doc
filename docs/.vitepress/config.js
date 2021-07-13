@@ -55,78 +55,85 @@ function getGuideSidebar() {
     {
       text: 'Pages des Services',
       children: [
-        { text: 'Welcome', link: '/guide/services/welcome' },
+        { text: 'Bienvenue (Welcome)', link: '/guide/services/welcome' },
         {
           text: 'Ma gestion',
-          link: '/guide/services/magestion/magestion',
+          link: '/guide/services/magestion/index',
 
           children: [
             {
               text: 'Index',
               link: '/guide/services/magestion/index',
             },
-            {
-              text: 'Affectation',
-              link: '/guide/services/magestion/affectation',
-            },
           ],
+        },
+        {
+          text: 'Affectation',
+          link: '/guide/services/magestion/affectation',
         },
         {
           text: 'Transactions',
           children: [
             {
-              text: 'Category',
-              link: '/guide/services/magestion/category',
+              text: 'Catégorie',
+              link: '/guide/services/transactions/category/',
+            },
+            {
+              text: 'Sous-Catégory',
+              link: '/guide/services/transactions/subcategory/',
             },
             {
               text: 'Transaction',
-              link: '/guide/services/magestion/transaction',
+              link: '/guide/services/transactions/transaction/',
             },
           ],
         },
         {
-          text: 'Invoice',
-          children: [
-            {
-              text: 'RECUPERER',
-              link: '/guide/services/invoice/index',
-            },
-            {
-              text: 'AJOUTER',
-              link: '/guide/services/invoice/store',
-            },
-            {
-              text: 'METTRE À JOUR',
-              link: '/guide/services/invoice/update',
-            },
-            {
-              text: 'SUPPRIMER',
-              link: '/guide/services/invoice/delete',
-            },
-          ],
+          text: 'Facture (Invoice)',
+          link: '/guide/services/invoice/index',
         },
-        {
-          text: 'Bank Acount',
+        // children: [
+        //   {
+        //     text: 'RECUPERER',
+        //     link: '/guide/services/invoice/retreiv',
+        //   },
+        //   {
+        //     text: 'AJOUTER',
+        //     link: '/guide/services/invoice/store',
+        //   },
+        //   {
+        //     text: 'METTRE À JOUR',
+        //     link: '/guide/services/invoice/update',
+        //   },
+        //   {
+        //     text: 'SUPPRIMER',
+        //     link: '/guide/services/invoice/delete',
+        //   },
+        // ],
 
-          children: [
-            {
-              text: 'RECUPERER',
-              link: '/guide/services/bankaccount/retrieve',
-            },
-            {
-              text: 'AJOUTER',
-              link: '/guide/services/bankaccount/store',
-            },
-            {
-              text: 'METTRE À JOUR',
-              link: '/guide/services/bankaccount/update',
-            },
-            {
-              text: 'SUPPRIMER',
-              link: '/guide/services/bankaccount/delete',
-            },
-          ],
+        {
+          text: 'Comptes Bancaires',
+          link: '/guide/services/bankaccount/index',
         },
+
+        // children: [
+        //   {
+        //     text: 'RECUPERER',
+        //     link: '/guide/services/bankaccount/retrieve',
+        //   },
+        //   {
+        //     text: 'AJOUTER',
+        //     link: '/guide/services/bankaccount/store',
+        //   },
+        //   {
+        //     text: 'METTRE À JOUR',
+        //     link: '/guide/services/bankaccount/update',
+        //   },
+        //   {
+        //     text: 'SUPPRIMER',
+        //     link: '/guide/services/bankaccount/delete',
+        //   },
+        // ],
         { text: 'Mes Encours', link: '/guide/services/mesencours/index' },
       ],
     },

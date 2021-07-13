@@ -24,7 +24,6 @@ Ci-dessous le tableau descriptif des paramètres de cette ressource :
 
 | paramètre     |   Type   | Règle de validation                                                                                                                                                                 | Description             |
 | :------------ | :------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------- |
-| id            | integer  | Géneration automatique                                                                                                                                                              | L'identifiant           |
 | createdAt     | datetime | Optionnel                                                                                                                                                                           | Date de création        |
 | label         |  string  | Obligatoire, min=3, max=200                                                                                                                                                         |                         |
 | reference     |  string  | Obligatoire, min=2, max=100                                                                                                                                                         |                         |
