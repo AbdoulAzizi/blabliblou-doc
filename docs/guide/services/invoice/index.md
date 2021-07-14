@@ -12,7 +12,7 @@ Ces ressource permettent l'enregistrement et la gestion de toutes les factures d
 
 <br>
 
-#### - [RÉCUPÉRER](/guide/services/invoice/retreive)
+#### - [RÉCUPÉRER](/guide/services/invoice/list)
 
 <br>
 

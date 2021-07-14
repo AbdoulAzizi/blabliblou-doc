@@ -1,15 +1,16 @@
-# Ressource : Ajout d'une nouvelle facture
+# Ressource : Suppression d'une facture
 
 ## 1. Description de la Resource
 
-Cette ressource permet d'ajouter une nouvelle facture pour un utilisateur quelconque .
+Cette ressource permet de supprimer une facture existante pour un utilisateur quelconque .
 
 ## 2. URL et Méthode d'accès
 
 Pour acceder à cette ressource, vous faites appel à l'url suivante:
 
 ```
-url: /invoice
+url: /invoice/id
+id = l'identifiant de la facture.
 ```
 
 ::: warning Rappel
@@ -45,10 +46,18 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
 
 ## 5. Cas d'échec d'une requête
 
-En cas d'échec, lorsque par exemple vous renseignez un montant non valide (négatif), vous aurez un message de type:
+En cas d'échec, lorsque par exemple la facture que vous voulez supprimer n'existe pas , vous aurez un message de type:
 
 ```json
 {
-  "amount": "Le montant doit être un nombre positif"
+  "id": "Ce(tte) invoice n'exist(e) pas."
+}
+```
+
+Ou lorsque vous n'avez pas les droits nécessaires pour supprimer une facture, un message s'affiche vous déclarant :
+
+```json
+{
+  "error": "Vous n'avez pas la permission de supprimer cette facture"
 }
 ```

@@ -21,22 +21,21 @@ L'accès aux données à cette ressource se fait via la méthode **`POST`**
 ## 3. Paramètres
 
 Ci-dessous le tableau descriptif des paramètres de cette ressource :
-
-| paramètre     |   Type   | Règle de validation                                                                                                                                                                 | Description             |
-| :------------ | :------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------- |
-| createdAt     | datetime | Optionnel                                                                                                                                                                           | Date de création        |
-| label         |  string  | Obligatoire, min=3, max=200                                                                                                                                                         |                         |
-| reference     |  string  | Obligatoire, min=2, max=100                                                                                                                                                         |                         |
-| subLabel      |  string  | Optionnel                                                                                                                                                                           |                         |
-| type          |  string  | Obligatoire, Valeurs admises:<br> **depense, recette**                                                                                                                              | Le type de référence    |
-| categoryId    | integer  | A condition que: la table **category** et la colonne **id** existent.                                                                                                               | Le id de la catégory    |
-| vatBlocked    | boolean  | Valeurs à choisir : **true, false**                                                                                                                                                 | Appliquer ou non la TVA |
-| amount        | decimal  | Obligatoire                                                                                                                                                                         | Le montant              |
-| amountWithVat | decimal  | Obligatoire                                                                                                                                                                         | Le montant avec la TVA  |
-| vat           | decimal  | Obligatoire                                                                                                                                                                         | La TVA                  |
-| vatValue      | decimal  | Obligatoire                                                                                                                                                                         | la valeur de la TVA     |
-| codeFiscal    |  string  | Obligatoire, <br> Valeurs possibles d'affectation: **["206000", "211000", "213000", "215400", "218000", "218200", "218300", "218400", "271000", "275000", "421000", 'A terminer']** | Le code Fiscal          |
-| bankId        | integer  | Obligatoire                                                                                                                                                                         | Le id de la banque      |
+| paramètre | Type | Règle de validation | Description |
+| :------------ | :------: | ----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- | :---------------------------------------------------- |
+| createdAt | datetime | Optionnel | Date de création |
+| label | string | Obligatoire, min=3, max=200 | C’est le libellé de l’affectation à choisir |
+| reference | string | Obligatoire, min=2, max=100 | La réference |
+| subLabel | string | Optionnel | Sous-libellé |
+| type | string | Obligatoire, Valeurs admises:<br> **depense, recette** | Dépense ou recette |
+| categoryId | integer | A condition que: la table **category** et la colonne **id** existent. | Catégorie de l’affectation |
+| vatBlocked | boolean | Valeurs à choisir : **true, false** | Indique si le taux de TVA peut être modifiable ou pas |
+| amount | decimal | Obligatoire | Le montant |
+| amountWithVat | decimal | Obligatoire | Le montant avec la TVA |
+| vat | decimal | Obligatoire | C’est le taux de TVA associée à cette affectation |
+| vatValue | decimal | Obligatoire | la valeur de la TVA |
+| codeFiscal | string | Obligatoire, <br> Valeurs possibles d'affectation: **["206000", "211000", "213000", "215400", "218000", "218200", "218300", "218400", "271000", "275000", "421000", 'A terminer']** | C’est le code fiscal correspondant |
+| bankId | integer | Obligatoire | Le id de la banque |
 
 ## 4. Requête réussie
 

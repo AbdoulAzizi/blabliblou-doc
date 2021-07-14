@@ -21,7 +21,7 @@ L'accès aux données à cette ressource se fait via la méthode **`POST`**
 
 ## 3. Paramètres
 
-Les paramètres de cette ressouce sont les mêmes que celle de la récupération des comptes bancaires qui sont définis sur la section suivante : [Paramètres](/guide/services/bankaccount/retrieve#_3-parametres)
+Les paramètres de cette ressouce sont les mêmes que celle de la récupération des comptes bancaires qui sont définis sur la section suivante : [Paramètres](/guide/services/bankaccount/list#_3-parametres)
 
 ## 4. Requête réussie
 

@@ -1,6 +1,4 @@
-### Introduction à l'api
-
----
+## Introduction à l'api
 
 <br>
 
@@ -48,13 +46,13 @@ De même quand vous modifiez un Token ou que vous transmettez une valeur incorre
 
 <br>
 
-#### Domain de l'API
+### Domain de l'API
 
 ::: warning Note
 Le domain de nos API est : `https://bbb-api.mypreprod.fr/api`, alors toutes les requêtes doivent être soumises a ce domain.
 :::
 
-#### Exemple illustratif d'une ressource complete (l'URL) de création :
+### Exemple illustratif d'une ressource complete (l'URL) de création :
 
 L'hote : https://bbb-api.mypreprod.fr/api
 
