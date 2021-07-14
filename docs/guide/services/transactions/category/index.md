@@ -1,10 +1,12 @@
 # Réssources Category (Catégories)
 
-## Description générale
+### 1. Description générale
 
 Ces ressource permettent l'enregistrement et la gestion des differentes catégories des autres ressources.
 
-## Les differentes ressources rattachées :
+### 2. Les differentes ressources rattachées :
+
+<br>
 
 #### - [AJOUTER](/guide/services/transactions/category/store)
 

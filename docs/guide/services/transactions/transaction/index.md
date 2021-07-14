@@ -1,16 +1,18 @@
-# Réssources Transactions
+# Réssources: Gestion des Transactions
 
-## Description générale
+### 1. Description générale
 
-Ces ressource permettent l'enregistrement et la gestion ???
+Ces ressource permettent et la gestion globale des transactions.
 
-## Les differentes ressources rattachées :
-
-#### - [RÉCUPÉRER](/guide/services/transactions/transaction/list)
+### 2. Les differentes ressources rattachées :
 
 <br>
 
 #### - [AJOUTER](/guide/services/transactions/transaction/store)
+
+<br>
+
+#### - [RÉCUPÉRER](/guide/services/transactions/transaction/list)
 
 <br>
 

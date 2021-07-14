@@ -1,12 +1,14 @@
 # Réssources Invoice (Factures)
 
-## Description générale
+### 1. Description générale
 
 Une pièce comptable est une facture d’achat/frais ou de vente prise en compte dans l’activité de l’utilisateur.
 
 Ces ressource permettent l'enregistrement et la gestion de toutes les factures d'un utilisateur.
 
-## Les differentes ressources rattachées :
+### 2. Les differentes ressources rattachées :
+
+<br>
 
 #### - [AJOUTER](/guide/services/invoice/store)
 

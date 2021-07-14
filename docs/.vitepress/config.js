@@ -59,17 +59,14 @@ function getGuideSidebar() {
         {
           text: 'Ma gestion',
           link: '/guide/services/magestion/index',
-
-          children: [
-            {
-              text: 'Index',
-              link: '/guide/services/magestion/index',
-            },
-          ],
         },
         {
-          text: 'Affectation',
-          link: '/guide/services/magestion/affectation',
+          text: 'Facture (Invoice)',
+          link: '/guide/services/invoice/index',
+        },
+        {
+          text: 'Comptes Bancaires',
+          link: '/guide/services/bankaccount/index',
         },
         {
           text: 'Transactions',
@@ -88,52 +85,6 @@ function getGuideSidebar() {
             },
           ],
         },
-        {
-          text: 'Facture (Invoice)',
-          link: '/guide/services/invoice/index',
-        },
-        // children: [
-        //   {
-        //     text: 'RECUPERER',
-        //     link: '/guide/services/invoice/retreiv',
-        //   },
-        //   {
-        //     text: 'AJOUTER',
-        //     link: '/guide/services/invoice/store',
-        //   },
-        //   {
-        //     text: 'METTRE À JOUR',
-        //     link: '/guide/services/invoice/update',
-        //   },
-        //   {
-        //     text: 'SUPPRIMER',
-        //     link: '/guide/services/invoice/delete',
-        //   },
-        // ],
-
-        {
-          text: 'Comptes Bancaires',
-          link: '/guide/services/bankaccount/index',
-        },
-
-        // children: [
-        //   {
-        //     text: 'RECUPERER',
-        //     link: '/guide/services/bankaccount/retrieve',
-        //   },
-        //   {
-        //     text: 'AJOUTER',
-        //     link: '/guide/services/bankaccount/store',
-        //   },
-        //   {
-        //     text: 'METTRE À JOUR',
-        //     link: '/guide/services/bankaccount/update',
-        //   },
-        //   {
-        //     text: 'SUPPRIMER',
-        //     link: '/guide/services/bankaccount/delete',
-        //   },
-        // ],
         { text: 'Mes Encours', link: '/guide/services/mesencours/index' },
       ],
     },

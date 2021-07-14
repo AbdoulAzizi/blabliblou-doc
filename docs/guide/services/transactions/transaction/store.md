@@ -1,17 +1,17 @@
-<h1> Ressource Affectation </h1>
+# Ressource : Ajout d'une transaction
 
 ---
 
 ## 1. Description de la Resource
 
-La ressource **Affectation** est l'URL qui renvoie les données liées aux catégories des opérations bancaires professionnelles de l’utilisateur.
+Cette ressource permet d'enregistrer une transaction.
 
 ## 2. URL et Méthode d'accès
 
 Pour acceder à cette ressource, vous faites appel à l'url suivante:
 
 ```
-url: /affectation
+url: /transaction
 ```
 
 ::: warning Rappel
@@ -35,7 +35,9 @@ Ci-dessous le tableau descriptif des paramètres de cette ressource :
 | vat | decimal | Obligatoire | C’est le taux de TVA associée à cette affectation |
 | vatValue | decimal | Obligatoire | la valeur de la TVA |
 | codeFiscal | string | Obligatoire, <br> Valeurs possibles d'affectation: **["206000", "211000", "213000", "215400", "218000", "218200", "218300", "218400", "271000", "275000", "421000", 'A terminer']** | C’est le code fiscal correspondant |
-| bankId | integer | Obligatoire | Le id de la banque |
+| bank | BankAccount | Obligatoire | Référence le id du compte bancaire |
+|user | User| Obligatoire| Référence le id de l'utilisateur|
+|subCategory | SubCategory| Optionnel| Référence le id de la sous catégorie|
 
 ## 4. Requête réussie
 

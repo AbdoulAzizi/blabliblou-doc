@@ -1,10 +1,12 @@
 # Réssources BankAccount (Comptes Bancaires)
 
-## Description générale
+### 1. Description générale
 
 Ces ressource permettent l'enregistrement et la gestion de tous les comptes bancaires d'un utilisateur.
 
-## Les differentes ressources rattachées :
+### 2. Les differentes ressources rattachées :
+
+<br>
 
 #### - [AJOUTER](/guide/services/bankaccount/store)
 

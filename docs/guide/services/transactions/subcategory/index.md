@@ -1,10 +1,12 @@
 # Réssources SubCategory (sous-Catégorys)
 
-## Description générale
+### 1. Description générale
 
 Ces ressource permettent l'enregistrement et la gestion des sous-catégories.
 
-## Les differentes ressources rattachées :
+### 2. Les differentes ressources rattachées :
+
+<br>
 
 #### - [AJOUTER](/guide/services/transactions/subcategory/store)
 
