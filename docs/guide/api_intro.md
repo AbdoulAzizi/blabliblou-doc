@@ -4,7 +4,7 @@
 
 ::: danger Très important!
 Toutes les resources de cette application sont securisées, donc il faut fournir le TOKEN (jeton)
-dans l'entete de chaque requête.
+dans l'entête de chaque requête.
 :::
 
 ### Quelques erreurs liées au token

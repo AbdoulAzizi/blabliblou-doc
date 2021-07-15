@@ -22,7 +22,7 @@ L'accès aux données à cette ressource se fait via la méthode **`DELETE`**
 
 ## 3. Paramètres
 
-Les paramètres de cette ressouce sont les mêmes que celle de la récupération des comptes bancaires qui sont définis sur la section suivante : [Paramètres](/guide/services/bankaccount/retrieve#_3-parametres)
+Cette ressource ne possède pas de paramètres.
 
 ## 4. Requête réussie
 

@@ -37,13 +37,28 @@ Ci-dessous le tableau descriptif des paramètres de cette ressource :
 Lorsque la requête est validée avec succès, il s'affichera un resultat de type suivant:
 
 ```json
-
+{
+  "display_name": "Achat de premiere",
+  "status": "enabled",
+  "slug": "Achat-de-premiere",
+  "id": 1,
+  "category": {
+    "display_name": "Achat de premiere",
+    "status": "enabled",
+    "slug": "sssd",
+    "id": 2,
+    "created_at": "2021-07-05 10:22:49"
+  },
+  "created_at": "2021-07-15 10:15:22"
+}
 ```
 
 ## 5. Cas d'échec d'une requête
 
-En cas d'échec, vous aurez un message de type:
+En cas d'échec, Si par exemple la catégorie parente n'existe pas, vous aurez un message de type:
 
 ```json
-
+{
+  "category_id": "La valeur est incorrecte."
+}
 ```

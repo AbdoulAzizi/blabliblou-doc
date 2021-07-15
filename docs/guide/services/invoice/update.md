@@ -19,7 +19,7 @@ L'accès aux données à cette ressource se fait via la méthode **`POST`**
 
 ## 3. Paramètres
 
-Les paramètres de cette ressouce sont les mêmes que celle de la récupération des factures qui sont définis sur la section suivante : [Paramètres](/guide/services/invoice/list#_3-parametres)
+Les paramètres de cette ressouce sont les mêmes que celle de l'ajout d'une facture qui sont définis sur la section suivante : [Paramètres](/guide/services/invoice/store#_3-parametres)
 
 ## 4. Requête réussie
 

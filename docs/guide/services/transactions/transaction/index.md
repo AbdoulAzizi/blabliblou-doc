@@ -2,7 +2,7 @@
 
 ### 1. Description générale
 
-Ces ressource permettent et la gestion globale des transactions.
+Ces ressources permettent et la gestion globale des transactions.
 
 ### 2. Les differentes ressources rattachées :
 

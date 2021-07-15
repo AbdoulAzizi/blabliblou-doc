@@ -21,7 +21,7 @@ L'accès aux données à cette ressource se fait via la méthode **`GET`**
 
 ## 3. Paramètres
 
-Les paramètres de cette ressouce sont les mêmes que celle de l'enregistrement des catégories qui sont définis sur la section suivante : [Paramètres](/guide/services/transactions/category/store.md#_3-parametres)
+Cette ressource ne possède pas de paramètres.
 
 ## 4. Requête réussie
 

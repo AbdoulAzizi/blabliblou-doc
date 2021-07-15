@@ -22,7 +22,7 @@ L'accès aux données à cette ressource se fait via la méthode **`PATCH`**
 
 ## 3. Paramètres
 
-Les paramètres de cette ressouce sont les mêmes que celle de la récupération des comptes bancaires qui sont définis sur la section suivante : [Paramètres](/guide/services/bankaccount/retrieve#_3-parametres)
+Les paramètres de cette ressouce sont les mêmes que celle de l'ajout d'un compte bancaire qui sont définis dans la section suivante : [Paramètres](/guide/services/bankaccount/store#_3-parametres)
 
 ## 4. Requête réussie
 

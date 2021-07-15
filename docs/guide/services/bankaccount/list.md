@@ -27,17 +27,7 @@ L'accès aux données à cette ressource se fait via la méthode **`GET`**
 
 ## 3. Paramètres
 
-Ci-dessous le tableau descriptif des paramètres de cette ressource :
-| paramètre | Type | Règle de validation | Description |
-| --------- | :----------------: | ---------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------: |
-| createdAt | datetime | Obligatoire (lors de la création et de la mise à jour) | Date de création |
-| name | string | Obligatoire (lors de la création), <br> min=2 (lors de la création et de la mise à jour) | Nom de la banque |
-| address | string | Obligatoire (lors de la création), <br> min=3 (lors de la création et de la mise à jour) | Adresse de la banque |
-| code | string | Obligatoire (lors de la création), <br> min=3 (lors de la création et de la mise à jour) | Code française de la banque |
-| iban | string | Format IBAN « International Bank Account Number » (en français : numéro de compte bancaire international) - lors de la création et de la mise à jour | Le numéro IBAN |
-| bic | string | Format BIC (Bank Identifier Code) - lors de la création et de la mise à jour | Le numéro BIC |
-| status | string | Valeurs à choisir : **enabled, disabled** - lors de la création et de la mise à jour | Le status |
-| user | User (utilisateur) | Obligatoire | Référence le id de l'utilisateur courant qui est le propriétaire du compte bancaire. |
+Cette ressource ne possède pas de paramètres.
 
 ## 4. Requête réussie
 

@@ -11,7 +11,8 @@ Cette ressource permet d'enregistrer une catégorie.
 Pour acceder à cette ressource, vous faites appel à l'url suivante:
 
 ```
-url: /category
+url: /category/id
+id = l'identifiant de la catégorie
 ```
 
 ::: warning Rappel
@@ -20,7 +21,7 @@ L'accès aux données à cette ressource se fait via la méthode **`POST`**
 
 ## 3. Paramètres
 
-Les paramètres de cette ressouce sont les mêmes que celle de l'enregistrement des catégories qui sont définis sur la section suivante : [Paramètres](/guide/services/transactions/category/store.md#_3-parametres) |
+Les paramètres de cette ressouce sont les mêmes que celle de l'enregistrement d'une catégorie qui sont définis dans la section suivante : [Paramètres](/guide/services/transactions/category/store.md#_3-parametres)
 
 ## 4. Requête réussie
 

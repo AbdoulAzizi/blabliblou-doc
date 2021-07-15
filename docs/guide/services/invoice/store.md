@@ -18,7 +18,24 @@ L'accès aux données à cette ressource se fait via la méthode **`POST`**
 
 ## 3. Paramètres
 
-Les paramètres de cette ressouce sont les mêmes que celle de la récupération des factures qui sont définis sur la section suivante : [Paramètres](/guide/services/invoice/list#_3-parametres)
+Ci-dessous le tableau descriptif des paramètres de cette ressource :
+| paramètre | Type | Règle de validation | Description |
+| --------------- | :----------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------- |
+| created_at | datetime | Optionnel | Date à laquelle elle a été éditée |
+| name | string | | Constitué de la date de la pièce à l’envers + Libellé pièce + montant TTC |
+| label | string | Obligatoire | Libellé de la pièce donnée par celui qui la fournit |
+| receipt | string | Fichier avec : <br> Taille maximale = "1M", <br> Type de formats acceptés : **application/pdf", "application/x-pdf", "image/jpg", "image/jpeg", "image/png"** | image ou un fichier PDF |
+| amount | decimal | Obligaoire, positif | Le montant de la facture |
+| amount_with_vat | decimal | Obligatoire, positif | Le montant avec TVA |
+| vat | decimal | Optionnel | La Taxe sur la Valeur Ajoutée |
+| vat_value | decimal | Optionnel | |
+| reference | string | Obligatoire lors de la création, min=3, max=100 | La référence interne comptable blabliblou de la pièce |
+| type | string | Obligatoire, (lors de la création et de la mise à jour)<br> Type pris en compte: **frais, vente** | Le type d'operation |
+| comment | text | Optionnel | Commentaire |
+| status | boolean | 0, 1 | Affectée (1) ou pas encore affectée (0) |
+| affectation_id | integer | Optionnel | L’affectation de la pièce liée à affectation de la ligne dans EN COURS ou dans relevé de compte MA GESTION |
+| operation_date | datetime | Obligatoire (lors de la création et de la mise à jour) | Date de l’opération bancaire à laquelle a été affectée la pièce (si Champs NULL, pièce non affectée encore) |
+| user | User (utilisateur) | Obligatoire |Référence le id de l'utilisateur courant qui est le propriétaire de la facture. |
 
 ## 4. Requête réussie
 
