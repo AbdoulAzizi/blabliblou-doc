@@ -6,7 +6,7 @@ module.exports = {
   themeConfig: {
     repo: 'AbdoulAzizi/blabliblou-doc',
     docsDir: 'docs',
-
+    docsBranch: 'main',
     editLinks: true,
     editLinkText: 'Modifier cette page sur GitHub',
     lastUpdated: 'Dernière mise à jour:',
