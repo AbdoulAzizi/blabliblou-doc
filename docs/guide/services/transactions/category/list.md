@@ -62,10 +62,10 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
 
 ## 5. Cas d'échec d'une requête
 
-En cas d'échec, quand vous renseignez un **slug** dejà utilisé, vous aurez un message de type:
+En cas d'échec, Si par exemple vous essayez d'acceder à cette ressource via la méthode `PATCH`, vous aurez un message de type:
 
 ```json
 {
-  "slug": "Cette valeur est déjà utilisée."
+  "error": "No route found for \"PATCH /api/category\": Method Not Allowed (Allow: POST, GET"
 }
 ```

@@ -44,20 +44,34 @@ Ci-dessous le tableau descriptif des paramètres de cette ressource :
 Lorsque la requête est validée avec succès, il s'affichera un resultat de type suivant:
 
 ```json
-{
-  "id": 2,
-  "label": "GREGO",
-  "reference": "23232",
-  "sub_label": "achat de matiere premiere",
-  "type": "depense",
-  "category_id": {},
-  "vat_blocked": false,
-  "amount": 3333.33,
-  "amount_with_vat": 4333.33,
-  "vat": "10",
-  "vat_value": 1000,
-  "code_fiscal": "211000",
-  "bank_id": 1
+  {
+    "id": 279,
+    "label": "Some test5",
+    "reference": "GHE",
+    "type": "recette",
+    "sub_category_id": {
+        "display_name": "Achat de premiere",
+        "status": "enabled",
+        "slug": "Achat-de-premiere",
+        "id": 5,
+        "category": {
+            "display_name": "Achat de premiere",
+            "status": "enabled",
+            "slug": "Achat-de-premiere",
+            "id": 6,
+            "created_at": "2021-07-13 17:10:36"
+        },
+        "created_at": "2021-07-19 17:53:50"
+    },
+    "vat_blocked": true,
+    "amount": 1000,
+    "amount_with_vat": 1200,
+    "vat": "20",
+    "vat_value": 200,
+    "code_fiscal": "206000",
+    "bank_id": 22,
+    "created_at": "2021-08-02 10:59:24"
+}
 }
 ```
 

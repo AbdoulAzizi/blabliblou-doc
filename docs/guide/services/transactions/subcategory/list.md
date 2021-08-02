@@ -79,7 +79,7 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
 
 ## 5. Cas d'échec d'une requête
 
-En cas d'échec, Si par exemple vous essayez d'acceder à cette via la méthode `PUT`, vous aurez un message de type:
+En cas d'échec, Si par exemple vous essayez d'acceder à cette ressource via la méthode `PUT`, vous aurez un message de type:
 
 ```json
 {
