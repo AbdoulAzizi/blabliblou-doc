@@ -25,7 +25,7 @@ Ci-dessous le tableau descriptif des paramètres de cette ressource :
 
 | paramètre    |    Type     | Règle de validation                       |                     Description                      |
 | ------------ | :---------: | ----------------------------------------- | :--------------------------------------------------: |
-| category_id  |     int     | Obligatoire                               |                L'id Catégorie parente                |
+| category_id  |     int     | Obligatoire                               |             L'id de la Catégorie parente             |
 | created_at   |  datetime   | Optionnel                                 |                   Date de création                   |
 | slug         |   string    | Optionnel                                 | créé/généré à partir du nom à afficher (displayname) |
 | display_name |   string    | Obligatoire                               |                    Nom à afficher                    |
