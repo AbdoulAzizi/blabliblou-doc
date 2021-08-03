@@ -25,10 +25,10 @@ Ci-dessous le tableau descriptif des paramètres de cette ressource :
 
 | paramètre    |    Type     | Règle de validation                       |                     Description                      |
 | ------------ | :---------: | ----------------------------------------- | :--------------------------------------------------: |
-| category     |  Category   | Obligatoire                               |                 La Catégorie parente                 |
-| createdAt    |  datetime   | Optionnel                                 |                   Date de création                   |
+| category_id  |     int     | Obligatoire                               |                L'id Catégorie parente                |
+| created_at   |  datetime   | Optionnel                                 |                   Date de création                   |
 | slug         |   string    | Optionnel                                 | créé/généré à partir du nom à afficher (displayname) |
-| displayName  |   string    | Obligatoire                               |                    Nom à afficher                    |
+| display_name |   string    | Obligatoire                               |                    Nom à afficher                    |
 | status       |   string    | Valeurs à choisir : **enabled, disabled** |                      le statut                       |
 | transactions | Transaction | Obligatoire                               |                    La transaction                    |
 

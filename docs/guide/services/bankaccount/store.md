@@ -24,7 +24,7 @@ L'accès aux données à cette ressource se fait via la méthode **`POST`**
 Ci-dessous le tableau descriptif des paramètres de cette ressource :
 | paramètre | Type | Règle de validation | Description |
 | --------- | :----------------: | ---------------------------------------------------------------------------------------------------------------------------------------------------- | :--------------------------: |
-| createdAt | datetime | Obligatoire (lors de la création et de la mise à jour) | Date de création |
+| created_at | datetime | Obligatoire (lors de la création et de la mise à jour) | Date de création |
 | name | string | Obligatoire (lors de la création), <br> min=2 (lors de la création et de la mise à jour) | Nom de la banque |
 | address | string | Obligatoire (lors de la création), <br> min=3 (lors de la création et de la mise à jour) | Adresse de la banque |
 | code | string | Obligatoire (lors de la création), <br> min=3 (lors de la création et de la mise à jour) | Code française de la banque |

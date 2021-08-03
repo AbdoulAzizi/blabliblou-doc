@@ -22,12 +22,12 @@ L'accès aux données à cette ressource se fait via la méthode **`POST`**
 
 Ci-dessous le tableau descriptif des paramètres de cette ressource :
 
-| paramètre   |   Type   | Règle de validation                                         |                     Description                      |
-| ----------- | :------: | ----------------------------------------------------------- | :--------------------------------------------------: |
-| createdAt   | datetime | Obligatoire                                                 |                   Date de création                   |
-| slug        |  string  | Optionnel                                                   | créé/généré à partir du nom à afficher (displayname) |
-| displayName |  string  | Obligatoire, min=3, max=200                                 |                    Nom à afficher                    |
-| status      |  string  | Obligatoire, <br> Valeurs à choisir : **enabled, disabled** |                      le status                       |
+| paramètre    |   Type   | Règle de validation                                         |                     Description                      |
+| ------------ | :------: | ----------------------------------------------------------- | :--------------------------------------------------: |
+| created_at   | datetime | Obligatoire                                                 |                   Date de création                   |
+| slug         |  string  | Optionnel                                                   | créé/généré à partir du nom à afficher (displayname) |
+| display_name |  string  | Obligatoire, min=3, max=200                                 |                    Nom à afficher                    |
+| status       |  string  | Obligatoire, <br> Valeurs à choisir : **enabled, disabled** |                      le status                       |
 
 ## 4. Requête réussie
 
