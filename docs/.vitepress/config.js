@@ -83,6 +83,14 @@ function getGuideSidebar() {
               text: 'Transaction',
               link: '/guide/services/transactions/transaction/',
             },
+            {
+              text: 'Affectation',
+              link: '/guide/services/transactions/affectation/',
+            },
+            {
+              text: 'Importation',
+              link: '/guide/services/transactions/import/',
+            },
           ],
         },
         { text: 'Mes Encours', link: '/guide/services/mesencours/index' },
