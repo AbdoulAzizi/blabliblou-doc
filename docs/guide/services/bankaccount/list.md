@@ -8,14 +8,14 @@ Cette ressource permet de récupérer tous les comptes bancaires d'un utilisateu
 
 ## 2. URL et Méthode d'accès
 
-Pour récupérer l'ensemble des comptes bancaires d'un utilisateur à cette ressource, vous faites appel à l'url suivante:
+Pour récupérer l'ensemble des comptes bancaires d'un utilisateur, vous faites appel à l'url suivante:
 
 ```
 url: /bank_accounts
 ```
 
 ::: warning Important
-Pour accceder à un seul compte bancaire via son id vous ajoutez `/id` après `url: /bank_accounts`. <br>
+Pour accceder à un seul compte bancaire via son identifiant (id), vous ajoutez `/id` après `url: /bank_accounts`. <br>
 Par exemple si l'on veut acceder au compte bancaire qui a le id=32, on procède comme suit:
 `url: /bank_accounts/32`
 :::
@@ -79,7 +79,9 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
 Si l'utilisateur courant ne possède auccun compte bancaire enregistré, vous aurez le résultat suivant:
 
 ```json
-[]
+{
+  "No Content": "Aucun compte bancaire n'a été trouvé pour cet utilisateur"
+}
 ```
 
 Ou, par exemple si vous essayez d'acceder à cette ressource par le verbe `POST` vous aurez un message de type:

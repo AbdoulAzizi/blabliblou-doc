@@ -1,8 +1,8 @@
-# Réssources SubCategory (sous-Catégorys)
+# Réssources : SubCategory (sous-Catégories)
 
 ### 1. Description générale
 
-Ces ressource permettent l'enregistrement et la gestion des sous-catégories.
+Ces ressources permettent l'enregistrement et la gestion des sous-catégories.
 
 ### 2. Les differentes ressources rattachées :
 

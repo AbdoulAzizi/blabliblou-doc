@@ -22,7 +22,7 @@ L'accès aux données à cette ressource se fait via la méthode **`DELETE`**
 
 ## 3. Paramètres
 
-Cette ressource ne possède pas de paramètres.
+Cette ressource n'admet pas de paramètres.
 
 ## 4. Requête réussie
 
@@ -30,13 +30,13 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
 
 ```json
 {
-  "message": "Votre opération a été traité avec succès."
+  "message": "ce(tte) categorie a été supprimé(e) avec succès."
 }
 ```
 
-## 5. Cas d'échec d'une requête
+## 5. Cas d'échec de requête
 
-En cas d'échec, Quand vous fournissez un id qui n'existe pas dans la base de donnée, vous aurez un message de type:
+Quand vous fournissez un **`id`** qui n'existe pas dans la base de donnée, vous aurez un message de type:
 
 ```json
 {

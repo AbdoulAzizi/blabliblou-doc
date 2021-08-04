@@ -21,7 +21,7 @@ L'accès aux données à cette ressource se fait via la méthode **`GET`**
 
 ## 3. Paramètres
 
-Cette ressource ne possède pas de paramètres.
+Cette ressource n'admet pas de paramètres.
 
 ## 4. Requête réussie
 

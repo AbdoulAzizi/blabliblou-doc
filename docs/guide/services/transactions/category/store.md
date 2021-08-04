@@ -14,7 +14,7 @@ Pour acceder à cette ressource, vous faites appel à l'url suivante:
 url: /category
 ```
 
-::: warning Rappel
+::: danger Rappel
 L'accès aux données à cette ressource se fait via la méthode **`POST`**
 :::
 
@@ -27,7 +27,7 @@ Ci-dessous le tableau descriptif des paramètres de cette ressource :
 | created_at   | datetime | Obligatoire                                                 |                   Date de création                   |
 | slug         |  string  | Optionnel                                                   | créé/généré à partir du nom à afficher (displayname) |
 | display_name |  string  | Obligatoire, min=3, max=200                                 |                    Nom à afficher                    |
-| status       |  string  | Obligatoire, <br> Valeurs à choisir : **enabled, disabled** |                      le status                       |
+| status       |  string  | Obligatoire, <br> Valeurs à choisir : **enabled, disabled** |              le status de la catégorie               |
 
 ## 4. Requête réussie
 

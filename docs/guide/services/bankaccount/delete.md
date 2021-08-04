@@ -30,13 +30,13 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
 
 ```json
 {
-  "message": "Votre opération a été traité avec succès."
+  "message": "ce(tte) compte bancaire a été supprimé avec succès."
 }
 ```
 
 ## 5. Cas d'échec d'une requête
 
-En cas d'échec, Quand vous fournissez un id qui n'existe pas dans la base de donnée, vous aurez un message de type:
+En cas d'échec, Quand vous fournissez un **`id`** qui n'existe pas dans la base de donnée, vous aurez un message de type:
 
 ```json
 {

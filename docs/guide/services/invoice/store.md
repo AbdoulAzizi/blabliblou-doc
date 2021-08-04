@@ -32,10 +32,10 @@ Ci-dessous le tableau descriptif des paramètres de cette ressource :
 | reference | string | Obligatoire lors de la création, min=3, max=100 | La référence interne comptable blabliblou de la pièce |
 | type | string | Obligatoire, (lors de la création et de la mise à jour)<br> Type pris en compte: **frais, vente** | Le type d'operation |
 | comment | text | Optionnel | Commentaire |
-| status | boolean | 0, 1 | Affectée (1) ou pas encore affectée (0) |
-| affectation_id | integer | Optionnel | L’affectation de la pièce liée à affectation de la ligne dans EN COURS ou dans relevé de compte MA GESTION |
+| status | boolean | Affectée (1) ou Non-Affectée (0) | Définit si la facture a été affectée à une opération bancaire ou non |
+| affectation_id | integer | Optionnel | L’affectation de la pièce liée à l'affectation de la ligne dans MES ENCOURS ou dans relevé de compte MA GESTION |
 | operation_date | datetime | Obligatoire (lors de la création et de la mise à jour) | Date de l’opération bancaire à laquelle a été affectée la pièce (si Champs NULL, pièce non affectée encore) |
-| user | User (utilisateur) | Obligatoire |Référence le id de l'utilisateur courant qui est le propriétaire de la facture. |
+| user_id| User (utilisateur) | Obligatoire |Référence le id de l'utilisateur courant qui est le propriétaire de la facture. |
 
 ## 4. Requête réussie
 
@@ -43,7 +43,7 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
 
 ```json
 {
-  "id": 74,
+  "id": 105,
   "label": "Achat de matiere premiere",
   "type": "frais",
   "amount": "1000",
@@ -53,10 +53,10 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
   "reference": "5EFDRE63x",
   "comment": "Ceci est un joli commentaire",
   "operation_date": "2021-06-18 20:21:00",
-  "created_at": "2021-07-12 18:08:51",
+  "created_at": "2021-08-04 10:55:06",
   "status": false,
-  "receipt_path": "/storage/invoices/",
-  "user_id": 9
+  "receipt_path": "/storage/invoices/invoice-610a720a8a483.jpg",
+  "user_id": 1
 }
 ```
 

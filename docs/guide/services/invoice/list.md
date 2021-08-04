@@ -33,7 +33,7 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
 ```json
 [
     {
-        "id": 70,
+        "id": 106,
         "label": "Achat de matiere premiere",
         "type": "frais",
         "amount": "1000.00",
@@ -43,13 +43,13 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
         "reference": "5EFDRE63x",
         "comment": "Ceci est un joli commentaire",
         "operation_date": "2021-06-18 20:21:00",
-        "created_at": "2021-07-12 13:52:04",
+        "created_at": "2021-08-04 11:02:49",
         "status": false,
-        "receipt_path": "/",
+        "receipt_path": "/storage/invoices/invoice-610a73d9efe77.jpg",
         "user_id": 1
     },
     {
-        "id": 72,
+        "id": 108,
         "label": "Achat de matiere premiere",
         "type": "frais",
         "amount": "1000.00",
@@ -59,16 +59,16 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
         "reference": "5EFDRE63x",
         "comment": "Ceci est un joli commentaire",
         "operation_date": "2021-06-18 20:21:00",
-        "created_at": "2021-07-12 13:52:06",
+        "created_at": "2021-08-04 11:05:42",
         "status": false,
-        "receipt_path": "/",
+        "receipt_path": "/storage/invoices/invoice-610a74868305d.jpg",
         "user_id": 1
     },
     .
     .
     .
-     {
-        "id": 69,
+      {
+        "id": 109,
         "label": "Achat de matiere premiere",
         "type": "frais",
         "amount": "1000.00",
@@ -78,9 +78,9 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
         "reference": "5EFDRE63x",
         "comment": "Ceci est un joli commentaire",
         "operation_date": "2021-06-18 20:21:00",
-        "created_at": "2021-07-12 13:52:02",
+        "created_at": "2021-08-04 11:20:58",
         "status": false,
-        "receipt_path": "/",
+        "receipt_path": "/storage/invoices/invoice-610a781a192c6.jpg",
         "user_id": 1
     }
 ]
@@ -93,5 +93,13 @@ En cas d'échec, par exemple si vous essayez d'acceder à cette ressource par le
 ```json
 {
   "error": "No route found for \"PUT /api/invoice\": Method Not Allowed (Allow: POST, GET)"
+}
+```
+
+Ou si l'utilisateur courant ne possède auccune facture enregistrée, vous aurez le résultat suivant:
+
+```json
+{
+  "No Content": "Aucune facture n'a été enregistré pour cet utilisateur."
 }
 ```

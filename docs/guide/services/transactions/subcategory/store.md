@@ -16,7 +16,7 @@ url: /sous-category
 
 ::: danger Rappel
 
-L'accès aux données à cette ressource se fait via la méthode **`POST`**
+L'accès aux données de cette ressource se fait via la méthode **`POST`**
 :::
 
 ## 3. Paramètres
@@ -53,7 +53,7 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
 }
 ```
 
-## 5. Cas d'échec d'une requête
+## 5. En cas d'échec de la requête
 
 En cas d'échec, Si par exemple la catégorie parente n'existe pas, vous aurez un message de type:
 

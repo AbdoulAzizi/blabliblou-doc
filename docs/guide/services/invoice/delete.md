@@ -13,8 +13,8 @@ url: /invoice/id
 id = l'identifiant de la facture.
 ```
 
-::: warning Rappel
-L'accès aux données à cette ressource se fait via la méthode **`POST`**
+::: danger Rappel
+L'accès aux données à cette ressource se fait via la méthode **`DELETE`**
 :::
 
 ## 3. Paramètres
@@ -27,20 +27,7 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
 
 ```json
 {
-  "id": 74,
-  "label": "Achat de matiere premiere",
-  "type": "frais",
-  "amount": "1000",
-  "amount_with_vat": "1200.50",
-  "vat": "0",
-  "vat_value": "0",
-  "reference": "5EFDRE63x",
-  "comment": "Ceci est un joli commentaire",
-  "operation_date": "2021-06-18 20:21:00",
-  "created_at": "2021-07-12 18:08:51",
-  "status": false,
-  "receipt_path": "/storage/invoices/",
-  "user_id": 9
+  "message": "ce(tte) invoice a été supprimé avec succès."
 }
 ```
 

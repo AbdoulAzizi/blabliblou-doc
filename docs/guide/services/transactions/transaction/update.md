@@ -1,3 +1,60 @@
-# Ressource : Mise à jour d'une transaction
+# Ressource : Mis à jour d'une transaction
 
-### ... Cette ressource n'est pas encore developée.
+---
+
+## 1. Description de la Resource
+
+Cette ressource permet de mettre à jour une transaction.
+
+## 2. URL et Méthode d'accès
+
+Pour mettre à jour une transaction, vous faites appel à l'url suivante:
+
+```
+url: /transaction/id
+id = l'identifiant de la transaction.
+```
+
+::: danger Rappel
+
+L'accès aux données à cette ressource se fait via la méthode **`POST`**
+:::
+
+## 3. Paramètres
+
+Les paramètres de cette ressouce sont les mêmes que celle de l'enregistrement d'une transaction qui sont définis dans la section suivante : [Paramètres](/guide/services/transactions/transaction/store.md#_3-parametres)
+
+## 4. Requête réussie
+
+Lorsque la requête est validée avec succès, il s'affichera un resultat de type suivant:
+
+```json
+{
+  "id": 6719,
+  "label": "Some test5",
+  "reference": "Gdte35B",
+  "type": "recette",
+  "sub_category_id": null,
+  "vat_blocked": true,
+  "amount": 1000,
+  "amount_with_vat": 1200,
+  "vat": "20",
+  "vat_value": 2002,
+  "code_fiscal": "206000",
+  "bank_id": 27,
+  "created_at": "2021-08-03 17:38:00",
+  "operation_date": "2021-01-20 00:00:00",
+  "debit": "0.00000",
+  "credit": "4.10000"
+}
+```
+
+## 5. Cas d'échec d'une requête
+
+En cas d'échec, Si par exemple la transaction n'existe pas, vous aurez un message de type:
+
+```json
+{
+  "error": "Ce(tte) transaction n'existe pas."
+}
+```

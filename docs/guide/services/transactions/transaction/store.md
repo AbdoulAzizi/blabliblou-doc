@@ -85,3 +85,11 @@ En cas d'échec, par exemple lorsque le paramètre **`reference`** n'est pas fou
   "reference": "Cette valeur ne doit pas être vide."
 }
 ```
+
+Ou quand l'utilisateur courant n'est pas le propriétaire du compte bancaire: le message suivant s'affichera:
+
+```json
+{
+  "message": "Vous ne pouvez pas ajouter une opération avec ce compte bancaire"
+}
+```

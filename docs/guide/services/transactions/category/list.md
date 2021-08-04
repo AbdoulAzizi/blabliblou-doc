@@ -12,10 +12,9 @@ Pour acceder à cette ressource, vous faites appel à l'url suivante:
 
 ```
 url: /category
-
 ```
 
-::: warning Rappel
+::: danger Rappel
 L'accès aux données à cette ressource se fait via la méthode **`GET`**
 :::
 
@@ -55,17 +54,15 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
         "id": 5,
         "created_at": "2021-07-13 12:05:24"
     }
-
 ]
-
 ```
 
 ## 5. Cas d'échec d'une requête
 
-En cas d'échec, Si par exemple vous essayez d'acceder à cette ressource via la méthode `PATCH`, vous aurez un message de type:
+En cas d'échec, si par exemple le résultat ne contient aucune catégorie enregistrée, vous aurez un message de type:
 
 ```json
 {
-  "error": "No route found for \"PATCH /api/category\": Method Not Allowed (Allow: POST, GET"
+  "message": "Aucune catégorie n'a été retrouvée"
 }
 ```

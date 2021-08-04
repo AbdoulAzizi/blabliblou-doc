@@ -2,7 +2,7 @@
 
 ### 1. Description générale
 
-Ces ressource permettent l'enregistrement et la gestion de tous les comptes bancaires d'un utilisateur.
+Ces ressources permettent l'enregistrement et la gestion de tous les comptes bancaires d'un utilisateur.
 
 ### 2. Les differentes ressources rattachées :
 

@@ -2,7 +2,7 @@
 
 ### 1. Description générale
 
-Ces ressource permettent l'enregistrement et la gestion des differentes catégories des autres ressources.
+Ces ressources permettent l'enregistrement et la gestion des differentes catégories des autres ressources.
 
 ### 2. Les differentes ressources rattachées :
 

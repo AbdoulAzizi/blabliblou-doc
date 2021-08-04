@@ -44,7 +44,7 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
 
 ## 5. Cas d'échec d'une requête
 
-En cas d'échec, Quand vous fournissez un id qui n'existe pas dans la base de donnée, vous aurez un message de type:
+En cas d'échec, Quand vous fournissez un **`id`** d'un compte bancaire qui n'existe pas dans la base de donnée, vous aurez un message de type:
 
 ```json
 {

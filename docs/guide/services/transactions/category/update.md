@@ -4,7 +4,7 @@
 
 ## 1. Description de la Resource
 
-Cette ressource permet d'enregistrer une catégorie.
+Cette ressource permet de mettre à jour une catégorie.
 
 ## 2. URL et Méthode d'accès
 
@@ -15,8 +15,8 @@ url: /category/id
 id = l'identifiant de la catégorie
 ```
 
-::: warning Rappel
-L'accès aux données à cette ressource se fait via la méthode **`POST`**
+::: danger Rappel
+L'accès aux données de cette ressource se fait via la méthode **`POST`**
 :::
 
 ## 3. Paramètres
@@ -39,15 +39,7 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
 
 ## 5. Cas d'échec d'une requête
 
-En cas d'échec, quand vous renseignez un **slug** dejà utilisé, vous aurez un message de type:
-
-```json
-{
-  "slug": "Cette valeur est déjà utilisée."
-}
-```
-
-Ou quand vous cherchez une catégorie qui n'existe pas, vous un message ce genre:
+En cas d'échec, quand vous voulez mettre à jour une catégorie qui n'existe pas, vous un message ce genre:
 
 ```json
 {

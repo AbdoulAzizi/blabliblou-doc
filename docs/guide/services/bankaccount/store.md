@@ -31,7 +31,7 @@ Ci-dessous le tableau descriptif des paramètres de cette ressource :
 | iban | string | Format IBAN « International Bank Account Number » (en français : numéro de compte bancaire international) - lors de la création et de la mise à jour | Le numéro IBAN |
 | bic | string | Format BIC (Bank Identifier Code) - lors de la création et de la mise à jour | Le numéro BIC |
 | status | string | Valeurs à choisir : **enabled, disabled** - lors de la création et de la mise à jour | Le status |
-| user | User (utilisateur) | Obligatoire | Référence le id de l'utilisateur courant qui est le propriétaire du compte bancaire. |
+| user_id | User (utilisateur) | Obligatoire | Référence le id de l'utilisateur courant qui est le propriétaire du compte bancaire. |
 
 ## 4. Requête réussie
 

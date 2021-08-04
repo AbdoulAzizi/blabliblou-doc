@@ -30,7 +30,7 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
 
 ```json
 {
-  "message": "Votre opération a été traité avec succès."
+  "message": "ce(tte) sous catégorie(type) a été supprimé(e) avec succès."
 }
 ```
 
