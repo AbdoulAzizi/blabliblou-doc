@@ -42,12 +42,37 @@ function getGuideSidebar() {
       children: [
         { text: "Introduction à l'API", link: '/guide/api_intro' },
         { text: "C'est quoi Blabliblou ?", link: '/guide/bbb_intro' },
+      ],
+    },
+    {
+      text: 'Espace utilisateur',
+      children: [
+        // Signup & Signin & update password
         {
           text: 'Authentification',
-          link: '/guide/auth/auth',
+          link: '/guide/user-area/index',
           children: [
-            { text: "S'enregistrer(users)", link: '/guide/auth/signIn' },
-            { text: 'Se connecter(login)', link: '/guide/auth/login' },
+            { text: "S'enregistrer(users)", link: '/guide/user-area/signup' },
+            { text: 'Se connecter(login)', link: '/guide/user-area/signin' },
+            { text: 'Récupérer l\'ulisateur connecté', link: '/guide/user-area/get-connected-user' },
+            // Change password
+            { text: "Modifier le mot de passe", link: '/guide/user-area/change-password' },
+            // Forgot password
+            {
+              text: 'Mot de passe oublié',
+              children: [
+                { text: "Demander l'email de recupération", link: '/guide/user-area/send-reset-password-link' },
+                { text: "Réinitialiser le mot de passe", link: '/guide/user-area/reset-password' },
+              ],
+            },
+
+          ],
+        },
+        // Update user details
+        {
+          text: 'MAJ d\'utilisateur',
+          children: [
+            { text: "Modifier utilisateur", link: '/guide/user-area/update-user' },
           ],
         },
       ],
