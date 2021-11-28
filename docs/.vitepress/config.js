@@ -75,6 +75,21 @@ function getGuideSidebar() {
             { text: "Modifier utilisateur", link: '/guide/user-area/update-user' },
           ],
         },
+
+        // Manage persons
+        {
+          text: 'Gestion du personnel',
+          children: [
+            { text: "Créer un gérant", link: '/guide/user-area/persons/add-manager' },
+            { text: "Supprimer un gérant", link: '/guide/user-area/persons/delete-manager' },
+            { text: "Lister les gérants", link: '/guide/user-area/persons/get-managers' },
+            
+            { text: "Créer un salarie", link: '/guide/user-area/persons/add-employee' },
+            { text: "Supprimer un salarie", link: '/guide/user-area/persons/delete-employee' },
+            { text: "Lister les salaries", link: '/guide/user-area/persons/get-employees' },
+          ],
+        },
+
       ],
     },
     {
