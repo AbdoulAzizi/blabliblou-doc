@@ -73,6 +73,7 @@ function getGuideSidebar() {
           text: 'MAJ d\'utilisateur',
           children: [
             { text: "Modifier utilisateur", link: '/guide/user-area/update-user' },
+            { text: "Modifier les données client", link: '/guide/user-area/manage-user-profile' },
           ],
         },
 
