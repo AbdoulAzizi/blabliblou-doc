@@ -1,6 +1,6 @@
 <meta charset="utf-8"/>
 
-### Ajout des données client:
+# Ajout des données client:
 
 <br />
 
@@ -136,7 +136,9 @@ Ci-dessous un exemple d'un échec de rêquete dans le cas d'un email déjà exis
 ```
 
 
-## La mise à jour des données d'un profile peut être faite comme suite:
+# Mise à jour d'un client
+
+### La mise à jour des données d'un profile peut être faite comme suite:
 
 1. Appelez la méthode __POST__ ___api/user/profile/update/{profile_id}___
 
@@ -145,8 +147,10 @@ Les paramêtres et rèles de validations dont les mêmes que ceux de la créatio
 
 
 
-## La suppression des données d'un profile peut être faite comme suite:
+# Suppression d'un client
+
+### La suppression des données d'un profile peut être faite comme suite:
 
 1. Appelez la méthode __DELETE__ ___api/user/profile/{profile_id}___
 
-La réponse des deux cas (réussite et échec) sont similaires aux autres!
+La réponse des deux cas (réussite et échec) sont similaires aux autres routes de suppression des entitées!
