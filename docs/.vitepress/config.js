@@ -111,6 +111,19 @@ function getGuideSidebar() {
           ],
         },
 
+        // Manage permissions
+        {
+          text: 'Gestion de permissions et relation client <> admin n',
+          children: [
+            { text: "Gérer la relation Admins N <--> Clients", link: '/guide/user-area/permissions-management/attach-admins-to-clients' },
+            { text: "Changer le role d'un utilisateur", link: '/guide/user-area/permissions-management/change-role' },
+            { text: "Admins n", link: '/guide/user-area/permissions-management/get-admins_n' },
+            { text: "Admins d'un client", link: '/guide/user-area/permissions-management/get-client-admins_n' },
+            { text: "Clients d'un admin n", link: '/guide/user-area/permissions-management/get-admins_n-client' },
+            
+          ],
+        },
+
       ],
     },
     {
