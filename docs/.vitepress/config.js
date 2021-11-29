@@ -73,7 +73,7 @@ function getGuideSidebar() {
           text: 'MAJ d\'utilisateur',
           children: [
             { text: "Modifier utilisateur", link: '/guide/user-area/update-user' },
-            { text: "Modifier les données client", link: '/guide/user-area/manage-user-profile' },
+            { text: "Gestion des données client", link: '/guide/user-area/manage-user-profile' },
           ],
         },
 
@@ -88,6 +88,16 @@ function getGuideSidebar() {
             { text: "Créer un salarie", link: '/guide/user-area/persons/add-employee' },
             { text: "Supprimer un salarie", link: '/guide/user-area/persons/delete-employee' },
             { text: "Lister les salaries", link: '/guide/user-area/persons/get-employees' },
+          ],
+        },
+
+        // Documents
+        {
+          text: 'Documents client',
+          children: [
+            { text: "Chargement d'un document", link: '/guide/user-area/files/upload-doc' },
+            { text: "Récupération des documents", link: '/guide/user-area/files/get-docs' },
+            { text: "Suppression d'un document", link: '/guide/user-area/files/delete-doc' },
           ],
         },
 
