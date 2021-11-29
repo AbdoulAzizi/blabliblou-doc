@@ -101,6 +101,16 @@ function getGuideSidebar() {
           ],
         },
 
+        // BBB-Invoice 
+        {
+          text: 'Factures BBB',
+          children: [
+            { text: "Créer", link: '/guide/user-area/bbb-invoice/create' },
+            { text: "Récupération", link: '/guide/user-area/bbb-invoice/get' },
+            { text: "Supprimer", link: '/guide/user-area/bbb-invoice/delete' },
+          ],
+        },
+
       ],
     },
     {
