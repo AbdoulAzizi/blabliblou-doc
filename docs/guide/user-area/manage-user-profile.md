@@ -136,7 +136,7 @@ Ci-dessous un exemple d'un échec de rêquete dans le cas d'un email déjà exis
 ```
 
 
-## La mise à jour des donnnées d'un profile peut être faite comme suite:
+## La mise à jour des données d'un profile peut être faite comme suite:
 
 1. Appelez la méthode __POST__ ___api/user/profile/update/{profile_id}___
 
@@ -145,7 +145,7 @@ Les paramêtres et rèles de validations dont les mêmes que ceux de la créatio
 
 
 
-## La suppression des donnnées d'un profile peut être faite comme suite:
+## La suppression des données d'un profile peut être faite comme suite:
 
 1. Appelez la méthode __DELETE__ ___api/user/profile/{profile_id}___
 
