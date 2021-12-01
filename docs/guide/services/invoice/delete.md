@@ -27,7 +27,7 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
 
 ```json
 {
-  "message": "ce(tte) invoice a été supprimé avec succès."
+  "message": "ce(tte) facture a été supprimé avec succès."
 }
 ```
 
@@ -37,7 +37,7 @@ En cas d'échec, lorsque par exemple la facture que vous voulez supprimer n'exis
 
 ```json
 {
-  "id": "Ce(tte) invoice n'exist(e) pas."
+  "id": "Ce(tte) facture n'exist(e) pas."
 }
 ```
 

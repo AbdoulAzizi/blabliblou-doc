@@ -21,35 +21,12 @@ L'accès aux données à cette ressource se fait via la méthode **`POST`**
 
 Les paramètres de cette ressouce sont les mêmes que celle de l'ajout d'une facture qui sont définis sur la section suivante : [Paramètres](/guide/services/invoice/store#_3-parametres)
 
+Sauf qu'ils sont tous optionnels!
 ## 4. Requête réussie
 
-Lorsque la requête est validée avec succès, il s'affichera un resultat de type suivant:
+Même que celle de l'ajout!
 
-```json
-{
-  "id": 72,
-  "label": "Achat de matiere premiere",
-  "type": "vente",
-  "amount": "100",
-  "amount_with_vat": "120.50",
-  "vat": "0.00",
-  "vat_value": "0.00",
-  "reference": "5EFDRE63x",
-  "comment": "Ceci est un joli commentaire",
-  "operation_date": "2021-06-18 20:21:00",
-  "created_at": "2021-07-12 13:52:06",
-  "status": false,
-  "receipt_path": "/storage/invoices/",
-  "user_id": 1
-}
-```
 
 ## 5. Cas d'échec d'une requête
 
-En cas d'échec, lorsque par exemple vous renseignez un id non valide (qui n'existe pas), vous aurez un message de type:
-
-```json
-{
-  "id": "Cette facture n'existe pas."
-}
-```
+Même que celle de l'ajout!

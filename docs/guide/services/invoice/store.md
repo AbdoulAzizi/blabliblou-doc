@@ -21,21 +21,19 @@ L'accès aux données à cette ressource se fait via la méthode **`POST`**
 Ci-dessous le tableau descriptif des paramètres de cette ressource :
 | paramètre | Type | Règle de validation | Description |
 | --------------- | :----------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------- |
-| created_at | datetime | Optionnel | Date à laquelle elle a été éditée |
-| name | string | | Constitué de la date de la pièce à l’envers + Libellé pièce + montant TTC |
+| receipt | file | Fichier avec : <br> Taille maximale = "1M", <br> Type de formats acceptés : **application/pdf", "application/x-pdf", "image/jpg", "image/jpeg", "image/png"** | image ou un fichier PDF |
 | label | string | Obligatoire | Libellé de la pièce donnée par celui qui la fournit |
-| receipt | string | Fichier avec : <br> Taille maximale = "1M", <br> Type de formats acceptés : **application/pdf", "application/x-pdf", "image/jpg", "image/jpeg", "image/png"** | image ou un fichier PDF |
-| amount | decimal | Obligaoire, positif | Le montant de la facture |
-| amount_with_vat | decimal | Obligatoire, positif | Le montant avec TVA |
+| type | string | Obligatoire, (lors de la création et de la mise à jour)<br> Type pris en compte: **frais, vente** | Le type d'operation |
+| amount | decimal | Obligatoire, positif | Le montant de la facture |
+| amount_with_vat | decimal | Optionnel, positif | Le montant avec TVA |
 | vat | decimal | Optionnel | La Taxe sur la Valeur Ajoutée |
 | vat_value | decimal | Optionnel | |
 | reference | string | Obligatoire lors de la création, min=3, max=100 | La référence interne comptable blabliblou de la pièce |
-| type | string | Obligatoire, (lors de la création et de la mise à jour)<br> Type pris en compte: **frais, vente** | Le type d'operation |
 | comment | text | Optionnel | Commentaire |
 | status | boolean | Affectée (1) ou Non-Affectée (0) | Définit si la facture a été affectée à une opération bancaire ou non |
-| affectation_id | integer | Optionnel | L’affectation de la pièce liée à l'affectation de la ligne dans MES ENCOURS ou dans relevé de compte MA GESTION |
+| paid_amount | decimal | Optionnel, positif | Le montant payé |
 | operation_date | datetime | Obligatoire (lors de la création et de la mise à jour) | Date de l’opération bancaire à laquelle a été affectée la pièce (si Champs NULL, pièce non affectée encore) |
-| user_id| User (utilisateur) | Obligatoire |Référence le id de l'utilisateur courant qui est le propriétaire de la facture. |
+| client_id| User (utilisateur) | Obligatoire |L'ID du qui est le propriétaire de la facture (piece). |
 
 ## 4. Requête réussie
 
@@ -43,20 +41,23 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
 
 ```json
 {
-  "id": 105,
-  "label": "Achat de matiere premiere",
-  "type": "frais",
-  "amount": "1000",
-  "amount_with_vat": "1200.50",
-  "vat": "0",
-  "vat_value": "0",
-  "reference": "5EFDRE63x",
-  "comment": "Ceci est un joli commentaire",
-  "operation_date": "2021-06-18 20:21:00",
-  "created_at": "2021-08-04 10:55:06",
-  "status": false,
-  "receipt_path": "/storage/invoices/invoice-610a720a8a483.jpg",
-  "user_id": 1
+    "id": 31,
+    "label": "Achat de matiere premiere",
+    "type": "vente",
+    "amount": "1000",
+    "amount_with_vat": "1200.50",
+    "vat": "0",
+    "vat_value": "0",
+    "reference": "5EFDRE63x",
+    "comment": "Ceci est un joli commentaire",
+    "operation_date": "2021-06-18 20:21:00",
+    "displayable_operation_date": "18/06/2021",
+    "created_at": "2021-12-01 14:16:53",
+    "file_status": true,
+    "affectation_status": false,
+    "paid_amount": 100,
+    "receipt_path": "/storage/invoices/PAGE-MON-SUIVI-COMPTA-V3-avec-modif-CHAMPS-RECHERCHE-par-mont-61a783d59413d.jpg",
+    "user_id": 6
 }
 ```
 
@@ -66,6 +67,9 @@ En cas d'échec, lorsque par exemple vous renseignez un montant non valide (nég
 
 ```json
 {
-  "amount": "Le montant doit être un nombre positif"
+    "label": "Le libellé ne doit pas être vide",
+    "receipt": "Cette valeur ne doit pas être vide.",
+    "operation_date": "Cette valeur ne doit pas être vide.",
+    ...
 }
 ```
