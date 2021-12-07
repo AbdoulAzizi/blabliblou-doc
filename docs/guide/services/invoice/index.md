@@ -23,3 +23,7 @@ Ces ressource permettent l'enregistrement et la gestion de toutes les factures d
 <br>
 
 #### - [SUPPRIMER](/guide/services/invoice/delete)
+
+<br>
+
+#### - [Importer un fichier des opérations](/guide/services/invoice/import)
