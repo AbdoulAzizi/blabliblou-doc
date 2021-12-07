@@ -52,7 +52,36 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
 ```json
 {
     "status": "Created",
-    "message": "Données importées et enregistrées avec succès"
+    "message": "Données importées et enregistrées avec succès",
+    "invoices": [
+        {
+            "id": 391,
+            "label": "SERV BANCAIRES1",
+            "type": "vente",
+            "amount": "1001",
+            "amount_with_vat": null,
+            "vat": "15",
+            "vat_value": null,
+            "reference": "1",
+            "comment": null,
+            "operation_date": "2021-02-01 00:00:00",
+            "displayable_operation_date": "01/02/2021",
+            "created_at": "2021-12-07 13:55:45",
+            "file_status": false,
+            "affectation_status": false,
+            "paid_amount": 0,
+            "receipt_path": null,
+            "user_id": 3
+        },
+        ...
+        {
+            "id": 394,
+            "label": "SERV BANCAIRES4",
+            "type": "vente",
+            ...
+            "user_id": 3
+        }
+    ]
 }
 ```
 
