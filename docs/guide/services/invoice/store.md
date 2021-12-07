@@ -22,17 +22,17 @@ Ci-dessous le tableau descriptif des paramètres de cette ressource :
 | paramètre | Type | Règle de validation | Description |
 | --------------- | :----------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------- |
 | receipt | file | Fichier avec : <br> Taille maximale = "1M", <br> Type de formats acceptés : **application/pdf", "application/x-pdf", "image/jpg", "image/jpeg", "image/png"** | image ou un fichier PDF |
-| label | string | Obligatoire | Libellé de la pièce donnée par celui qui la fournit |
-| type | string | Obligatoire, (lors de la création et de la mise à jour)<br> Type pris en compte: **frais, vente** | Le type d'operation |
-| amount | decimal | Obligatoire, positif | Le montant de la facture |
+| label | string | Optionnel | Libellé de la pièce donnée par celui qui la fournit |
+| type | string | Optionnel, (lors de la création et de la mise à jour)<br> Type pris en compte: **frais, vente** | Le type d'operation |
+| amount | decimal | Optionnel, positif | Le montant de la facture |
 | amount_with_vat | decimal | Optionnel, positif | Le montant avec TVA |
 | vat | decimal | Optionnel | La Taxe sur la Valeur Ajoutée |
 | vat_value | decimal | Optionnel | |
-| reference | string | Obligatoire lors de la création, min=3, max=100 | La référence interne comptable blabliblou de la pièce |
+| reference | string | Optionnel lors de la création, min=3, max=100 | La référence interne comptable blabliblou de la pièce |
 | comment | text | Optionnel | Commentaire |
 | status | boolean | Affectée (1) ou Non-Affectée (0) | Définit si la facture a été affectée à une opération bancaire ou non |
 | paid_amount | decimal | Optionnel, positif | Le montant payé |
-| operation_date | datetime | Obligatoire (lors de la création et de la mise à jour) | Date de l’opération bancaire à laquelle a été affectée la pièce (si Champs NULL, pièce non affectée encore) |
+| operation_date | datetime | Optionnel (lors de la création et de la mise à jour) | Date de l’opération bancaire à laquelle a été affectée la pièce (si Champs NULL, pièce non affectée encore) |
 | client_id| User (utilisateur) | Obligatoire |L'ID du qui est le propriétaire de la facture (piece). |
 
 ## 4. Requête réussie
@@ -67,9 +67,7 @@ En cas d'échec, lorsque par exemple vous renseignez un montant non valide (nég
 
 ```json
 {
-    "label": "Le libellé ne doit pas être vide",
-    "receipt": "Cette valeur ne doit pas être vide.",
-    "operation_date": "Cette valeur ne doit pas être vide.",
+    "type": "Le type d'operation doit être soit frais ou vente!",
     ...
 }
 ```
