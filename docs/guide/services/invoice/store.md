@@ -28,7 +28,7 @@ Ci-dessous le tableau descriptif des paramètres de cette ressource :
 | amount_with_vat | decimal | Optionnel, positif | Le montant avec TVA |
 | vat | decimal | Optionnel | La Taxe sur la Valeur Ajoutée |
 | vat_value | decimal | Optionnel | |
-| reference | string | Optionnel lors de la création, min=3, max=100 | La référence interne comptable blabliblou de la pièce |
+| reference | string | Optionnel lors de la création, min=1, max=100 | La référence interne comptable blabliblou de la pièce |
 | comment | text | Optionnel | Commentaire |
 | status | boolean | Affectée (1) ou Non-Affectée (0) | Définit si la facture a été affectée à une opération bancaire ou non |
 | paid_amount | decimal | Optionnel, positif | Le montant payé |

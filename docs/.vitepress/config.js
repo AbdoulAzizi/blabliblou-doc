@@ -139,33 +139,20 @@ function getGuideSidebar() {
           link: '/guide/services/invoice/index',
         },
         {
+          text: 'Opérations bancaires (transactions)',
+          link: '/guide/services/transaction/index',
+        },
+        {
+          text: 'Affectation',
+          link: '/guide/services/affectation/index',
+        },
+        {
           text: 'Comptes Bancaires',
           link: '/guide/services/bankaccount/index',
         },
         {
-          text: 'Transactions',
-          children: [
-            {
-              text: 'Catégorie',
-              link: '/guide/services/transactions/category/',
-            },
-            {
-              text: 'Sous-Catégory',
-              link: '/guide/services/transactions/subcategory/',
-            },
-            {
-              text: 'Transaction',
-              link: '/guide/services/transactions/transaction/',
-            },
-            {
-              text: 'Affectation',
-              link: '/guide/services/transactions/affectation/',
-            },
-            {
-              text: 'Importation',
-              link: '/guide/services/transactions/import/',
-            },
-          ],
+          text: 'Ressources communes',
+          link: '/guide/services/common/index',
         },
         { text: 'Mes Encours', link: '/guide/services/mesencours/index' },
       ],

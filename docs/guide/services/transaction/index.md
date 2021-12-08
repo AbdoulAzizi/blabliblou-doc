@@ -21,3 +21,7 @@ Ces ressources permettent et la gestion globale des transactions.
 <br>
 
 #### - [SUPPRIMER](/guide/services/transactions/transaction/delete)
+
+<br>
+
+#### - [Import](/guide/services/transaction/import/index)

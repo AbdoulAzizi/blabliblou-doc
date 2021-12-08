@@ -26,4 +26,4 @@ Ces ressource permettent l'enregistrement et la gestion de toutes les factures d
 
 <br>
 
-#### - [Importer un fichier des opérations](/guide/services/invoice/import)
+#### - [Importer un fichier des factures(pièces)](/guide/services/invoice/import)
