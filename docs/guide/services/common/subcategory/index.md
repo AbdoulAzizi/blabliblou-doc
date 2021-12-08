@@ -8,16 +8,16 @@ Ces ressources permettent l'enregistrement et la gestion des sous-catégories.
 
 <br>
 
-#### - [AJOUTER](/guide/services/transactions/subcategory/store)
+#### - [AJOUTER](/guide/services/common/subcategory/store)
 
 <br>
 
-#### - [RÉCUPÉRER](/guide/services/transactions/subcategory/list)
+#### - [RÉCUPÉRER](/guide/services/common/subcategory/list)
 
 <br>
 
-#### - [METTRE À JOUR](/guide/services/transactions/subcategory/update)
+#### - [METTRE À JOUR](/guide/services/common/subcategory/update)
 
 <br>
 
-#### - [SUPPRIMER](/guide/services/transactions/subcategory/delete)
+#### - [SUPPRIMER](/guide/services/common/subcategory/delete)

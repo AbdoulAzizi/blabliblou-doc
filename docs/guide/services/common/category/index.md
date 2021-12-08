@@ -8,16 +8,16 @@ Ces ressources permettent l'enregistrement et la gestion des differentes catégo
 
 <br>
 
-#### - [AJOUTER](/guide/services/transactions/category/store)
+#### - [AJOUTER](/guide/services/common/category/store)
 
 <br>
 
-#### - [RÉCUPÉRER](/guide/services/transactions/category/list)
+#### - [RÉCUPÉRER](/guide/services/common/category/list)
 
 <br>
 
-#### - [METTRE À JOUR](/guide/services/transactions/category/update)
+#### - [METTRE À JOUR](/guide/services/common/category/update)
 
 <br>
 
-#### - [SUPPRIMER](/guide/services/transactions/category/delete)
+#### - [SUPPRIMER](/guide/services/common/category/delete)

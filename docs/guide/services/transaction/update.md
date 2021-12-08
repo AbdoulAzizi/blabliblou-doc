@@ -22,7 +22,7 @@ L'accès aux données à cette ressource se fait via la méthode **`POST`**
 
 ## 3. Paramètres
 
-Les paramètres de cette ressouce sont les mêmes que celle de l'enregistrement d'une transaction qui sont définis dans la section suivante : [Paramètres](/guide/services/transactions/transaction/store.md#_3-parametres)
+Les paramètres de cette ressouce sont les mêmes que celle de l'enregistrement d'une transaction qui sont définis dans la section suivante : [Paramètres](/guide/services/common/subcategory/store.md#_3-parametres)
 
 ## 4. Requête réussie
 

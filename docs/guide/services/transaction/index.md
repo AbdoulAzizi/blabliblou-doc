@@ -8,19 +8,19 @@ Ces ressources permettent et la gestion globale des transactions.
 
 <br>
 
-#### - [AJOUTER](/guide/services/transactions/transaction/store)
+#### - [AJOUTER](/guide/services/transaction/store)
 
 <br>
 
-#### - [RÉCUPÉRER](/guide/services/transactions/transaction/list)
+#### - [RÉCUPÉRER](/guide/services/transaction/list)
 
 <br>
 
-#### - [METTRE À JOUR](/guide/services/transactions/transaction/update)
+#### - [METTRE À JOUR](/guide/services/transaction/update)
 
 <br>
 
-#### - [SUPPRIMER](/guide/services/transactions/transaction/delete)
+#### - [SUPPRIMER](/guide/services/transaction/delete)
 
 <br>
 

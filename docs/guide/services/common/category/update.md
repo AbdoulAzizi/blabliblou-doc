@@ -21,7 +21,7 @@ L'accès aux données de cette ressource se fait via la méthode **`POST`**
 
 ## 3. Paramètres
 
-Les paramètres de cette ressouce sont les mêmes que celle de l'enregistrement d'une catégorie qui sont définis dans la section suivante : [Paramètres](/guide/services/transactions/category/store.md#_3-parametres)
+Les paramètres de cette ressouce sont les mêmes que celle de l'enregistrement d'une catégorie qui sont définis dans la section suivante : [Paramètres](/guide/services/common/category/store.md#_3-parametres)
 
 ## 4. Requête réussie
 
