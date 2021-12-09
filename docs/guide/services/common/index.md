@@ -11,6 +11,13 @@ La liste des ressources utilisées dans plusieurs contexts differents
 <br>
 
 #### - [Catégorie](/guide/services/common/category/)
+
+<br>
+
 #### - [Sous-Catégory](/guide/services/common/subcategory/)
+
+<br>
+
+#### - [Pièces comptales chargées](/guide/services/common/uploaded-invoices)
 
 <br>
