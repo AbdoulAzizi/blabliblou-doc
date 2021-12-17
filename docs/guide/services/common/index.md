@@ -21,3 +21,7 @@ La liste des ressources utilisées dans plusieurs contexts differents
 #### - [Pièces comptales chargées](/guide/services/common/uploaded-invoices)
 
 <br>
+
+#### - [Variables complementaire](/guide/services/common/complementary-variables)
+
+<br>
