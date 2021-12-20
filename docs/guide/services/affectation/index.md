@@ -17,8 +17,16 @@ Associer une opération donnée à une facture donnée aussi
 <br>
 
 
-
-
 Affecter une transaction donnée à une facture donnée (pièce) ou une nouvelle pièce sous format d'un fichier (image jusqu'au moment)
 
 #### - [Affecter une transaction](/guide/services/affectation/invoice-to-transaction)
+
+<br>
+<hr>
+<br>
+
+
+Suppression des affectations qui concerne une facture,
+suppression de la pièce et la réinitialisation de la facture
+
+#### - [Réinitialiser facture ](/guide/services/affectation/delete)
