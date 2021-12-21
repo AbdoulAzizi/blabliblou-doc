@@ -38,54 +38,120 @@ Ci-dessous le tableau descriptif des paramètres de cette ressource :
 | operation_type | string | Optionnel | Le type d'operation: **frais, vente** |
 | id | integer | Optionnel | L'ID d'operation à récupérer pour récupérer une opération precise |
 | client_id | integer | Optionnel | L'ID du client pour récupérer ses operations |
+| include | array | Optionnel | Les objets relatifs, valeurs supportées: **sub_category** |
+| group_by | array | Optionnel | Grouper la réponse(json response), valeurs supportées: **sub_category** |
 
-## 4. Requête réussie
 
+## 4.1. Requête réussie (cas simple)
 Lorsque la requête est validée avec succès, il s'affichera un resultat de type suivant:
 
 ```json
 [
     {
-        "id": 11,
-        "label": "Achat de matiere premiere",
-        "type": "vente",
-        "amount": "1000.00",
-        "amount_with_vat": "1200.50",
-        "vat": "0.00",
-        "vat_value": "0.00",
-        "reference": "5EFDRE63x",
-        "comment": "Ceci est un joli commentaire",
-        "operation_date": "2021-06-18 20:21:00",
-        "displayable_operation_date": "18/06/2021",
-        "created_at": "2021-11-02 18:13:31",
-        "file_status": true,
+        "id": 383,
+        "index": 383,
+        "label": null,
+        "type": null,
+        "amount": null,
+        "amount_with_vat": null,
+        "vat": null,
+        "vat_value": null,
+        "reference": null,
+        "comment": null,
+        "operation_date": "2021-12-07 12:28:48",
+        "displayable_operation_date": "07/12/2021",
+        "created_at": "2021-12-07 12:28:48",
         "affectation_status": false,
         "paid_amount": 0,
-        "receipt_path": "/storage/invoices/test-61817fcb73667.pdf",
-        "user_id": 6
-    },
-    {
-        "id": 12,
-        "label": "Achat de matiere premiere",
-        "type": "vente",
-        "amount": "1000.00",
-        "amount_with_vat": "1200.50",
-        "vat": "0.00",
-        "vat_value": "0.00",
-        "reference": "5EFDRE63x",
-        "comment": "Ceci est un joli commentaire",
-        "operation_date": "2021-06-18 20:21:00",
-        "displayable_operation_date": "18/06/2021",
-        "created_at": "2021-11-02 18:14:05",
-        "file_status": true,
-        "affectation_status": false,
-        "paid_amount": 0,
-        "receipt_path": "/storage/invoices/test-61817fee06445.pdf",
-        "user_id": 6
+        "receipt_path": null,
+        "user_id": 25,
     },
     ...
 ]
 ```
+
+## 4.2. Requête réussie (avec par `sub_category`)
+
+```json
+[
+    {
+        "id": 394,
+        "index": 394,
+        "label": "SERV BANCAIRES4",
+        "type": "vente",
+        "amount": "1004.00",
+        "amount_with_vat": null,
+        "vat": "10.00",
+        "vat_value": null,
+        "reference": "1",
+        "comment": null,
+        "operation_date": "2021-02-01 00:00:00",
+        "displayable_operation_date": "01/02/2021",
+        "created_at": "2021-12-07 13:55:45",
+        "affectation_status": false,
+        "paid_amount": 0,
+        "receipt_path": null,
+        "user_id": 25,
+        "sub_category": {
+            "display_name": "Autre frais d’intérimaire_1",
+            "status": "enabled",
+            "slug": "Autre-frais-d-interimaire-1",
+            "id": 1,
+            "category_id": 2,
+            "created_at": "2021-08-26 18:41:37"
+        }
+    },
+    {
+        "id": 391,
+        "index": 391,
+        ...
+        "sub_category": {
+            "display_name": "Autre frais d’intérimaire_1",
+            ...
+            "created_at": "2021-08-26 18:41:37"
+        }
+    },
+    ...
+]
+```
+
+## 4.3. Requête réussie (avec par `sub_category` et groupée par `sub_category`)
+```json
+{
+    "Frais d’intérimaire": [
+        {
+            "id": 391,
+            "index": 391,
+            "label": null,
+            "type": null,
+            "amount": null,
+            "amount_with_vat": null,
+            "vat": null,
+            "vat_value": null,
+            ...
+            "sub_category": {
+                "display_name": "Frais d’intérimaire",
+                ...
+                "created_at": "2021-08-26 18:41:37"
+            }
+        }
+    ],
+    "Autre frais d’intérimaire": [
+        {
+            "id": 398,
+            ...
+            "user_id": 25,
+            "sub_category": {
+                "display_name": "Autre frais d’intérimaire",
+                ...
+                "created_at": "2021-08-26 18:42:33"
+            }
+        }
+    ],
+    ...
+}
+```
+
 
 ## 5. Cas d'échec d'une requête
 
