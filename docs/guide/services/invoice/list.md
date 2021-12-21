@@ -70,7 +70,7 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
 ]
 ```
 
-## 4.2. Requête réussie (avec par `sub_category`)
+## 4.2. Requête réussie (avec `sub_category`)
 
 ```json
 [
@@ -115,7 +115,7 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
 ]
 ```
 
-## 4.3. Requête réussie (avec par `sub_category` et groupée par `sub_category`)
+## 4.3. Requête réussie (avec `sub_category`, groupée par `sub_category`)
 ```json
 {
     "Frais d’intérimaire": [
