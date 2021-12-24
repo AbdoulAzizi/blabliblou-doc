@@ -155,6 +155,7 @@ function getGuideSidebar() {
           link: '/guide/services/common/index',
         },
         { text: 'Mes Encours', link: '/guide/services/mesencours/index' },
+        { text: 'Mon prévisionnel', link: '/guide/services/expectation/index' },
       ],
     },
   ];
