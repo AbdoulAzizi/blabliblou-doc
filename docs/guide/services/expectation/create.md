@@ -22,7 +22,6 @@ Methode:  `POST`
 Si des données existent dans la BDD avec le même `type` et la même `périod` il seront écraser par celles-ci dans la requête, sinon une nouvelles sera crée dans la tables prévisionnel `expectation`
 :::
 
-
 #### 3. Paramètres
 
 Le type de formulaire à soumettre doit être `form-data` afin qu'il puisse envoyer des fichiers!
