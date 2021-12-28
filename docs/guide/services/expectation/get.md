@@ -13,7 +13,7 @@ Cette ressource permet de récupérer les factures d'un client donné
 url: /expectation?{end_at}=&{start_at}=&{client_id}=
 ```
 
-::: warning
+::: warning Rappel
 Methode:  `GET`
 :::
 
