@@ -10,18 +10,32 @@ Cette ressource permet de récupérer les factures d'un client donné
 
 #### 2. La route
 ```
-url: /api/client/bbb-invoice?client_id={client_id}
+url: /expectation?{end_at}=&{start_at}=&{client_id}=
 ```
 
-::: danger Rappel
+::: warning
 Methode:  `GET`
 :::
 
 <br />
 
 #### 3. Paramètres
+Les paramètres sont utilisés ici pour filtrer le résultat retourné
 
-Aucun paramètre n'est demandé
+| paramètre | Type | Règle de validation | Description |
+| --------------- | :----------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------- |
+| start_at | datetime | Obligatoire | Le prévisionnel supérieur ou égal à cette date |
+| end_at | datetime | Obligatoire | Le prévisionnel inférieur ou égal à cette date |
+| client_id | integer | Optionnel | L'ID du client pour récupérer son prévisionnel |
+
+### Exemple de requête sous format de
+```json
+{
+    "end_at":"2022-12-31",
+    "start_at":"2022-01-01",
+    "client_id": 25
+}
+```
 
 <br />
 
