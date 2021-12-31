@@ -63,7 +63,7 @@ En cas d'échec, Si par exemple la transaction n'existe pas, vous aurez un messa
 <!--  -->
 
 
-## 2. Bloquer la modiication des transactions (opérations bancaires)
+## 2. Bloquer la modification des transactions (opérations bancaires)
 ### 2.1. Description de la Resource
 
 Le blockage de modification, ne bloque que l'utilisateur client de les modifier
