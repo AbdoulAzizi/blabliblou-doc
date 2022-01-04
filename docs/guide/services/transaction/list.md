@@ -33,12 +33,12 @@ Utiliser les paramètres ci-dessous pour filtrer le resultat renvoyé
 | vat_value | decimal | Optionnel | la valeur de la TVA |
 | vat_blocked | boolean | Valeurs à choisir : **true, false** | Indique si le taux de TVA peut être modifiable ou pas |
 | code_fiscal | string | Optionnel, <br> Valeurs possibles d'affectation: **["206000", "211000", "213000", "215400", "218000", "218200", "218300", "218400", "271000", "275000", "421000", 'A terminer']** | C’est le code fiscal correspondant |
-| bank_id | BankAccount | Optionnel | L'ID du compte bancaire |
-| parent_id | BankAccount | Optionnel | L'ID d'opération mère s'il en a (cas des opérationn déroulée) |
-| sub_category_id | SubCategory| Optionnel| L'ID de la sous catégorie|
-| client_id | User| Optionnel| L'ID de l'utilisateur client|
-| id | User| Optionnel| Si ce champ est fourni, il va écraser les autres, et la methode va chercher l'opération qui correspond à cet ID|
-| include | User| Optionnel| Les objects relatifs, valeurs possibles: **children**"|
+| bank_id | integer | Optionnel | L'ID du compte bancaire |
+| parent_id | integer | Optionnel | L'ID d'opération mère s'il en a (cas des opérationn déroulée) |
+| sub_category_id | integer| Optionnel| L'ID de la sous catégorie|
+| client_id | User| integer| L'ID de l'utilisateur client|
+| id | integer| Optionnel| Si ce champ est fourni, il va écraser les autres, et la methode va chercher l'opération qui correspond à cet ID|
+| include | array| Optionnel| Les objects relatifs, valeurs possibles: **children**"|
 
 
 ## 4. Requête réussie
