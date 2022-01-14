@@ -73,6 +73,7 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
         "vat_value": 200,
         "code_fiscal": "206000",
         "bank_id": 22,
+        "is_affected": true,
         "created_at": "2021-08-02 10:59:24"
     },
 
@@ -106,6 +107,7 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
         "vat_value": 200,
         "code_fiscal": "206000",
         "bank_id": 22,
+        "is_affected": false,
         "created_at": "2021-07-30 11:23:27"
     }
 
