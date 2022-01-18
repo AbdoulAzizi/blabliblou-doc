@@ -24,7 +24,7 @@ Ci-dessous le tableau descriptif des paramètres de cette ressource :
 | paramètre | Type | Règle de validation | Description |
 | --------------- | :----------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------- |
 | client_id | integer | Obligatoire | L'ID du client dont lequel nous renseignons la variable |
-| name | string | Obligatoire | Nom de la variable, valeurs permises (__`stock`__, __`vente_non_facturee`__, __`remuneration_actuelle`__, __`dette_sociale_actuelle`__) |
+| name | string | Obligatoire | Nom de la variable, valeurs permises (__`stock`__, __`vente_non_facturee`__, __`remuneration_actuelle`__, __`dette_sociale_actuelle`__, __`remuneration_estimee`__, __`dette_sociale_estimee`__) |
 | value | string | Obligatoire | Valeur de la variable |
 | period_from | datetime | Obligatoire | Début de period d'utilisation de la variable |
 | period_to | datetime | Obligatoire | Fin de period d'utilisation de la variable |
