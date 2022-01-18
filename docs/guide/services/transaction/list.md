@@ -39,6 +39,8 @@ Utiliser les paramètres ci-dessous pour filtrer le resultat renvoyé
 | client_id | User| integer| L'ID de l'utilisateur client|
 | id | integer| Optionnel| Si ce champ est fourni, il va écraser les autres, et la methode va chercher l'opération qui correspond à cet ID|
 | include | array| Optionnel| Les objects relatifs, valeurs possibles: **children**"|
+| start_at | Datetime| Optionnel| A partir de `Date d'opération bancaire` |
+| end_at | Datetime| Optionnel| Jusqu'au `Date d'opération bancaire` |
 
 
 ## 4. Requête réussie
