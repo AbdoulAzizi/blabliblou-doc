@@ -85,10 +85,57 @@ Lorsque la requête est validée avec succès, il s'affichera un resultat de typ
 }
 ```
 
-### 1.4 Requête échouée
+### 2.4 Requête échouée
 
 ```json
 {
     "message": "Ce(tte) variable complémentaire n'existe pas."
+}
+```
+
+## 3 Récupération des variables
+
+### 3.1 Endpoint
+
+```
+url: /user/delete-complementary-variable/{variable_name}
+```
+
+::: danger Rappel
+Méthode: **`GET`**
+:::
+
+### 3.2 Paramètres
+
+Ci-dessous le tableau descriptif des paramètres de cette ressource :
+| paramètre | Type | Règle de validation | Description |
+| --------------- | :----------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------ | :---------------------------------------------------------------------------------------------------------- |
+| period_from | datetime | Obligatoire | Debut de period |
+| period_to | datetime | Obligatoire | Fin de period |
+
+### 3.3 Requête réussie
+
+Lorsque la requête est validée avec succès, il s'affichera un resultat de type suivant:
+
+```json
+[
+    {
+        "id": 18,
+        "name": "stock",
+        "value": "25",
+        "period_from": "01/01/2021",
+        "period_to": "12/31/2021",
+        "created_at": "01/31/2022 02:37:20",
+        "updated_at": null
+    }
+]
+```
+
+### 3.4 Requête échouée
+
+```json
+{
+    "period_from": "Ce champ est obligatoire.",
+    "period_to": "Ce champ est obligatoire."
 }
 ```

@@ -25,3 +25,7 @@ La liste des ressources utilisées dans plusieurs contexts differents
 #### - [Variables complementaire](/guide/services/common/complementary-variables)
 
 <br>
+
+#### - [Chiffres d'affaires](/guide/services/common/turnover)
+
+<br>
