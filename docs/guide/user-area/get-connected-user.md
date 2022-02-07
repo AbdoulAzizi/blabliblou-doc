@@ -1,6 +1,6 @@
 <meta charset="utf-8"/>
 
-### Récupération du mot passe oublié (étape 1) :
+### Récupération de l'utilisateur connecté:
 
 <br />
 
@@ -44,7 +44,7 @@ Methode:  `GET`
         "name": "test",
         "business_name": "test",
         "phone": "2126690412",
-        "client_status": "OFFRE",
+        "client_status": "SARL",
         "siret": "6GDERST",
         "address": {
             "num": "4",

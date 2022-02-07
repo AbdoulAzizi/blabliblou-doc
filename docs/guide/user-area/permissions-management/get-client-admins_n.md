@@ -61,7 +61,7 @@ L'objet `profile` ne sera pas inclut si l'argument `include` n'est pas présent 
             "name": "test",
             "business_name": "test",
             "phone": "2126690817529",
-            "client_status": "OFFRE",
+            "client_status": "SARL",
             "siret": "6GDERST",
             "address": {
                 "num": 4,

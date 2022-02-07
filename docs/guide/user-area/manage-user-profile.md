@@ -6,14 +6,14 @@
 
 #### 1. Resource description
 
-Puisque seul les clients qui ont ces données, alors nous avons décidé de séparer la route d'ajout des données busniess de la route de création des utilisateurs qui peuevnt être même des admins
+Puisque seul les clients qui ont ces données, alors nous avons décidé de séparer la route d'ajout des données de la route de création des utilisateurs
 
 #### 2. Mettre à jour un utilisateur
 
 Pour acceder à cette ressource, vous faites appel à l'url suivante:
 
 ```
-url: /user/update
+url: /user/profile/create
 ```
 
 ::: danger Rappel
@@ -60,7 +60,7 @@ Les diferents parametres liées à cette ressource sont les suivants:
 {
     "entry_date": "2021-09-01",
     "exercice_entry_date": "2021-10-01",
-    "client_status":  "offre",
+    "client_status":  "SARL",
     "name":  "test",
     "business_name":  "test",
     "siret":  "6GDERST",
@@ -88,7 +88,7 @@ Les diferents parametres liées à cette ressource sont les suivants:
 
 #### 4. Requête réussie (Code: 200)
 
-Ci-dessous un exemple de rêquete passer avec succès en renseignant les champs nécessaires (Obligatoires):
+Ci-dessous un exemple de rêquete passée avec succès en renseignant les champs nécessaires (Obligatoires):
 
 ``` JSON
 {
@@ -100,7 +100,7 @@ Ci-dessous un exemple de rêquete passer avec succès en renseignant les champs 
     "name": "test",
     "business_name": "test",
     "phone": "212669081749",
-    "client_status": "OFFRE",
+    "client_status": "SARL",
     "siret": "6GDERST",
     "address": {
         "num": 4,

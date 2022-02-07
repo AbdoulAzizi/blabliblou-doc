@@ -42,7 +42,7 @@ Les diferents parametres liées à cette ressource sont les suivants:
 
 #### 4. Requête réussie (Code: 200)
 
-Ci-dessous un exemple de rêquete passer avec succès en renseignant les champs nécessaires (Obligatoires):
+Ci-dessous un exemple de rêquete passée avec succès en renseignant les champs nécessaires (Obligatoires):
 
 ``` JSON
 {
@@ -66,7 +66,7 @@ Ci-dessous un exemple de rêquete passer avec succès en renseignant les champs 
         "name": "test",
         "business_name": "test",
         "phone": "2126690412",
-        "client_status": "OFFRE",
+        "client_status": "SARL",
         "siret": "6GDERST",
         "address": {
             "num": "4",

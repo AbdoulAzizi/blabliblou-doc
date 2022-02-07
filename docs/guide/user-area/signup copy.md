@@ -63,7 +63,7 @@ Les diiferents parametres liées à cette ressource sont les suivants:
 
 #### 4. Requête réussie
 
-Ci-dessous un exemple de rêquete passer avec succès en renseignant les champs nécessaires (Obligatoires):
+Ci-dessous un exemple de rêquete passée avec succès en renseignant les champs nécessaires (Obligatoires):
 
 ```
 
@@ -81,7 +81,7 @@ Ci-dessous un exemple de rêquete passer avec succès en renseignant les champs 
     },
     "clientStatus": "password",
     "email": "aziz@gmail.com",
-    "clientName": "OFFRE",
+    "clientName": "Business HQ",
     "clientCommercialName": "Mohamed",
     "clientSiret": "23561534",
     "clientAddress": "Av. Abdellah ben Allal",

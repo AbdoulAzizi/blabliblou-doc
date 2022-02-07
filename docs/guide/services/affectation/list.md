@@ -31,7 +31,7 @@ Les paramètres sont utilisés ici pour filtrer le résultat renvoyé
 
 #### 4. Requête réussie (Code: 200)
 
-Ci-dessous un exemple de rêquete passer avec succès:
+Ci-dessous un exemple de rêquete passée avec succès:
 
 __1. Avec transaction_id__
 

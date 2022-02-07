@@ -32,7 +32,7 @@ Methode:  `POST`
 
 #### 4. Requête réussie (Code: 200)
 
-Ci-dessous un exemple de rêquete passer avec succès en renseignant les champs nécessaires (Obligatoires):
+Ci-dessous un exemple de rêquete passée avec succès en renseignant les champs nécessaires (Obligatoires):
 
 ``` JSON
 {
