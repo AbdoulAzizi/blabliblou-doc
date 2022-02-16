@@ -140,6 +140,7 @@ function getGuideSidebar() {
         },
         { text: 'Mes Encours', link: '/guide/services/mesencours/index' },
         { text: 'Mon prévisionnel', link: '/guide/services/expectation/index' },
+        { text: 'Indicateurs', link: '/guide/services/panels-and-graphs/index' },
       ],
     },
   ];
