@@ -1,14 +1,14 @@
-# Ressource : Les données des 4 panneaux
+# Ressource : Détails trésorerie
 
 ## 1. Description de la Resource
 
-Cette ressource permette la récupération des calculs succints des indicateurs numériques
+Evolution de trésorerie par période
 
 
 ### 1 Endpoint
 
 ```
-url: /stats/dashboard?{start_at}&{end_at}&{client_id}&{bank_id}
+url: /stats/dashboard/treasury?{start_at}&{end_at}&{client_id}&{bank_id}
 ```
 
 ::: warning Rappel
@@ -30,18 +30,44 @@ Ci-dessous le tableau descriptif des paramètres de cette ressource :
 ```json
 {
     "treasury": {
-        "current": 112740,
-        "expected": 152460,
-        "today_balance": 13200
+        "2021-01": 120210,
+        "2021-02": 12121,
+        "2021-03": 12310,
+        "2021-04": 121120,
+        "2021-05": 151120,
+        "2021-06": 14120,
+        "2021-07": 11220,
+        "2021-08": 4120,
+        "2021-09": 11310,
+        "2021-10": 10610,
+        "2021-11": 94610
     },
-    "frais": 15300,
-    "frais_estimee": 13600,
-    "frais_prevu": 2640,
-    "previous_frais": 10000,
-    "ca_encaissee": 4700,
-    "ca_estimee": 11700,
-    "ca_prevu": 155100,
-    "previous_ca": 3210
+    "previous_treasury": {
+        "2021-01": 125210,
+        "2021-02": 121610,
+        "2021-03": 132610,
+        "2021-04": 121610,
+        "2021-05": 121610,
+        "2021-06": 114610,
+        "2021-07": 164610,
+        "2021-08": 115610,
+        "2021-09": 114410,
+        "2021-10": 114630,
+        "2021-11": 114620
+    },
+    "expected_treasury": {
+        "2021-01": 35210,
+        "2021-02": 24610,
+        "2021-03": 21510,
+        "2021-04": 21660,
+        "2021-05": 21617,
+        "2021-06": 14690,
+        "2021-07": 14010,
+        "2021-08": 11610,
+        "2021-09": 15610,
+        "2021-10": 19610,
+        "2021-11": 14430
+    }
 }
 ```
 
