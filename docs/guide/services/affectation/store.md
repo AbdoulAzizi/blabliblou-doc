@@ -23,8 +23,16 @@ L'accès aux données à cette ressource se fait via la méthode **`POST`**
 Ci-dessous le tableau descriptif des paramètres de cette ressource :
 | paramètre | Type | Règle de validation | Description |
 | :------------ | :------: | ------------------------------- | :--------- |
-| created_at | datetime | Obligatoire | Date de l'affectation|
-| status| string| Optionnel | Status de l'affectation|
+| comment| string | Optionnel| Une description ou un commentaire |
+| label| string | Optionnel| Intitulé de l'opération bancaire |
+| reference| string | Optionnel| Ref de l'opération bancaire |
+| amount| float| Optionnel | Montant HT d'opération bancaire|
+| amount_with_vat| float| Optionnel | Montant TTC d'opération bancaire|
+| vat| float| Optionnel | TVA d'opération bancaire|
+| vat_value| float| Optionnel | Valeur TVA d'opération bancaire|
+| vat_blocked| boolean| Optionnel | Si l'opération bancaire est modifiable par le client ou non |
+| parent_id| int | Optionnel | ID d'opération bancaire parente si c'est déroulée |
+| sub_category_id| integer | Opeionnel | l'identifiant de la sou catégorie |
 | transaction_id| Transaction (opération bancaire)|obligatoire | l'identifiant de la transaction|
 | invoice_id| Invoice (Facture)| obligatoire| l'identifiant de la facture |
 
