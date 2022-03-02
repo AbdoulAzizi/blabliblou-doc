@@ -1,4 +1,4 @@
-# Ressource : Détails Chiffre d'Affaire
+# Ressource : Chiffre d'Affaire (Opérations)
 
 ## 1. Description de la Resource
 

@@ -32,9 +32,7 @@ Les diiferents parametres liées à cette ressource sont les suivants:
 | password | string | Obligatoire | mot de passe client |
 | username | string | Unique | Le nom d'utilisateur qui sera utilisé lors de l'authentification, s'il n'est pas fourni, l'email qui sera utilisé à la place |
 | display_name | string | Obligatoire | Capital social ou rien |
-| status | string | Optionnel | Son statut en interne qui doit etre l'une de ces valeurs (OFFRE, EN_COURS, RESILIE, RESILIE_BBB) |
 | phone | string | Optionnel, Unique | Tel société principal |
-| role | json | Optionnel, <br> valeurs permises: client, admin_n, ou admin_p | Rôle De l'utilisateur |
 | creation_date | datetime | Optionnel | Date de création de la structure juridique |
 
 <br />
@@ -55,7 +53,7 @@ Ci-dessous un exemple de rêquete passée avec succès en renseignant les champs
     "display_name": "RABSO",
     "username": "contact@rabso.comss",
     "status": "OFFRE",
-    "role": "admin_n"
+    "role": "client"
 }
 ```
 
